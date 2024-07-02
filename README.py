@@ -16,21 +16,12 @@
 # 
 # ### `Microsoft Office 2016`
 # 
-# O `Microsoft Office 2016` é uma suíte de aplicativos de produtividade lançada pela Microsoft, que oferece ferramentas essenciais tanto para usuários domésticos quanto para empresas. Inclui programas populares como Word, Excel, PowerPoint, Outlook, Access e Publisher, cada um com funções específicas que vão desde a criação de documentos de texto e gerenciamento de e-mails, até análise de dados e apresentações dinâmicas. O Office 2016 trouxe melhorias significativas em colaboração e segurança, integrando-se com o OneDrive e outros serviços em nuvem, e apresentando recursos como a coautoria em tempo real e a proteção de dados avançada, refletindo as necessidades de um ambiente de trabalho mais conectado e seguro.
+# O `Microsoft Office 2016` é uma suíte de aplicativos de produtividade lançada pela `Microsoft`, que oferece ferramentas essenciais tanto para usuários domésticos quanto para empresas. Inclui programas populares como `Word`, `Excel`, `PowerPoint`, `Outlook`, `Access` e `Publisher`, cada um com funções específicas que vão desde a criação de documentos de texto e gerenciamento de e-mails, até análise de dados e apresentações dinâmicas. O `Office 2016` trouxe melhorias significativas em colaboração e segurança, integrando-se com o `OneDrive` e outros serviços em nuvem, e apresentando recursos como a coautoria em tempo real e a proteção de dados avançada, refletindo as necessidades de um ambiente de trabalho mais conectado e seguro.
 # 
 
-# ## Revisão(ões)/Versão(ões)
+# ## 1. Como baixar o arquivo `.iso` do `Microsoft Office 2016`
 # 
-# | Revisão número | Data da revisão | Descrição da revisão                                                                   | Autor da revisão                                |
-# |:--------------:|:---------------:|:---------------------------------------------------------------------------------------|:------------------------------------------------|
-# | 0              | 05/11/2023      | <ul><li>Revisão inicial/criação do documento.</li></ul>                                | <ul><li>Eden Denis F. da S. L. Santos</li></ul> |
-# | 1              | 05/11/2023      | <ul><li>Alterado o comando para extrair de `Extract Here` para `Folder`.</li></ul>     | <ul><li>Eden Denis F. da S. L. Santos</li></ul> |
-# | 2              | 06/11/2023      | <ul><li>Incluída a atualização do `wine` para a versão mais atual e estável.</li></ul> | <ul><li>Eden Denis F. da S. L. Santos</li></ul> |
-# 
-
-# ## 1. Como baixar o arquivo `.iso` do Microsoft Office 2016
-# 
-# 1. Acessar o website `https://massgrave.dev/`
+# 1. Acessar o website <https://massgrave.dev/>
 # 
 # <div align="center">
 #     <img src="figures/fig1.png" alt="Minha Imagem" />
@@ -78,28 +69,31 @@
 # 
 # 7. Salvar o arquivo em um pasta.
 
-# ## 2. Como converter o arquivo `.iso` do Microsoft Office 2016 em `.img` no Linux Ubuntu [4]
+# ## 2. Como converter o arquivo `.iso` do `Microsoft Office 2016` em `.img` no `Linux Ubuntu` [4]
 # 
-# Para converter um arquivo `.iso` para `.img` no terminal do Linux Ubuntu, você pode usar a ferramenta `dd`, que é um utilitário de linha de comando para converter e copiar arquivos. Aqui está um exemplo de como fazer isso:
+# Para converter um arquivo `.iso` para `.img` no `Terminal Emulator` do `Linux Ubuntu`, você pode usar a ferramenta `dd`, que é um utilitário de linha de comando para converter e copiar arquivos. Aqui está um exemplo de como fazer isso:
 # 
-# 1. Abra o terminal. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+# 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 # 
 
 # 2. Certifique-se de que seu sistema esteja limpo e atualizado.
 # 
-#     2.1 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+#     2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
+#     
+#     2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
 # 
-#     2.2 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
+#     2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
 # 
-#     2.3 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update -y`
+#     2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update`
 # 
-#     2.4 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
+#     2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes: `sudo apt --fix-broken install`
 # 
-#     2.5 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update -y`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
+#     2.6 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
+#     
+#     2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
 # 
-#     2.6 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
-# 
-#     2.7 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+#     2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
+#   
 
 # 3. Use o comando `dd` com a seguinte sintaxe: `sudo dd if=/caminho/para/arquivo.iso of=/caminho/para/arquivo.img bs=4M`
 # 
@@ -118,34 +112,37 @@
 
 # ## 3. Configurar/Instalar/Atualizar o `wine` para a versão mais atualizada e estável
 # 
-# Para atualizar o Wine para a versão `8.0.2` no Ubuntu, você pode seguir os passos abaixo. Note que estes passos são gerais e a disponibilidade de uma versão específica como `8.0.2` depende do repositório do Wine e se essa versão é oferecida para a distribuição do Ubuntu que você está usando.
+# Para atualizar o `Wine` para a versão `8.0.2` no Ubuntu, você pode seguir os passos abaixo. Note que estes passos são gerais e a disponibilidade de uma versão específica como `8.0.2` depende do repositório do `Wine` e se essa versão é oferecida para a distribuição do Ubuntu que você está usando.
 # 
 # Aqui está um guia passo a passo:
 # 
-# 1. Abra o terminal. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+# 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 # 
 
 # 2. Certifique-se de que seu sistema esteja limpo e atualizado.
 # 
-#     2.1 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+#     2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
+#     
+#     2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
 # 
-#     2.2 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
+#     2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
 # 
-#     2.3 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update -y`
+#     2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update`
 # 
-#     2.4 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
+#     2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes: `sudo apt --fix-broken install`
 # 
-#     2.5 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update -y`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
+#     2.6 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
+#     
+#     2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
 # 
-#     2.6 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
-# 
-#     2.7 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+#     2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
+#     
 
 # 3. **Remova a versão atual do Wine (opcional):** Se você já tem o Wine instalado e quer garantir uma instalação limpa, você pode remover a versão atual antes de instalar uma nova: `sudo apt remove --purge wine wine64 wine32 wine-stable wine-staging -y`
 # 
 # 4. Habilite a arquitetura `i386` (se ainda não estiver habilitada), pois muitos aplicativos do Windows requerem suporte para 32 bits: `sudo dpkg --add-architecture i386`
 # 
-# 5. Adicione o repositório do WineHQ:
+# 5. Adicione o repositório do `WineHQ`:
 # 
 #     ```
 #     wget -nc https://dl.winehq.org/wine-builds/winehq.key
@@ -153,7 +150,7 @@
 #     sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 #     ```
 # 
-# 6. Atualize os pacotes: `sudo apt update -y`
+# 6. Atualize os pacotes: `sudo apt update`
 # 
 # 7. Instale a versão desejada do Wine:
 # 
@@ -166,7 +163,7 @@
 #     winbindd -V
 #     ```
 # 
-#     Se você quiser especificamente a versão `8.0.2`, você pode precisar baixar o pacote `.deb` correspondente diretamente do site do WineHQ se ele estiver disponível para o Ubuntu.
+#     Se você quiser especificamente a versão `8.0.2`, você pode precisar baixar o pacote `.deb` correspondente diretamente do site do WineHQ se ele estiver disponível para o `Ubuntu`.
 # 
 # 8. Verifique a versão instalada do Wine: `wine --version`
 # 
@@ -179,24 +176,27 @@
 # 
 # Para instalar o `Playonlinux` no `Linux Ubuntu`, você pode seguir estas etapas:
 # 
-# 1. Abra o terminal. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+# 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 #     
 
 # 2. Certifique-se de que seu sistema esteja limpo e atualizado.
 # 
-#     2.1 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+#     2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
+#     
+#     2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
 # 
-#     2.2 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
+#     2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
 # 
-#     2.3 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update -y`
+#     2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update`
 # 
-#     2.4 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
+#     2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes: `sudo apt --fix-broken install`
 # 
-#     2.5 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update -y`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
+#     2.6 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
+#     
+#     2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
 # 
-#     2.6 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
-# 
-#     2.7 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+#     2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
+#   
 
 # 3. **Instalar `PlayOnLinux`:** Agora, instale o `PlayOnLinux` com o seguinte comando: `sudo apt install playonlinux -y`
 # 
@@ -422,10 +422,11 @@
 
 # ## Referências
 # 
-# [1] OPENAI. ***Instalação do bottle no ubuntu:*** https://chat.openai.com/c/92444ccc-f995-4e9c-8f03-678931882241 (texto adaptado). Acessado em: 01/11/2023 19:17.
+# [1] OPENAI. ***Instalação do bottle no ubuntu.*** Disponível em: <https://chat.openai.com/c/92444ccc-f995-4e9c-8f03-678931882241> (texto adaptado). Acessado em: 01/11/2023 19:17.
 # 
-# [2] OPENAI. ***Microsoft office 2016 overview:*** https://chat.openai.com/c/f4373ad1-fde7-48c6-933a-91a70564cb26 (texto adaptado). Acessado em: 05/11/2023 23:22.
+# [2] OPENAI. ***Microsoft office 2016 overview.*** Disponível em: <https://chat.openai.com/c/f4373ad1-fde7-48c6-933a-91a70564cb26> (texto adaptado). Acessado em: 05/11/2023 23:22.
 # 
-# [3] OPENAI. ***Extrair iso com 7-zip:*** https://chat.openai.com/c/9aeb16fc-d4dc-4a5b-a7eb-cd82d851d7b7 (texto adaptado). Acessado em: 06/11/2023 09:37.
+# [3] OPENAI. ***Extrair iso com 7-zip.*** Disponível em: <https://chat.openai.com/c/9aeb16fc-d4dc-4a5b-a7eb-cd82d851d7b7> (texto adaptado). Acessado em: 06/11/2023 09:37.
 # 
-# [4] OPENAI. ***Converter arquivo `.iso` em `.img`:*** https://chat.openai.com/c/498fa917-4067-4fc5-b69d-31c9514dc47e (texto adaptado). Acessado em: 23/11/2023 13:47.
+# [4] OPENAI. ***Converter arquivo `.iso` em `.img`.*** Disponível em: <https://chat.openai.com/c/498fa917-4067-4fc5-b69d-31c9514dc47e> (texto adaptado). Acessado em: 23/11/2023 13:47.
+# 
