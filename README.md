@@ -344,7 +344,19 @@ Depois de instalado, você pode abrir o `PlayOnLinux` a partir do menu de aplica
     <p>Fig. 16 .</p>
 </div>
 
-9. Repita a etapa acima para instalar o componente `riched20`.
+9. **Repita a etapa acima para instalar o(s) componente(s)**: o prefixo ideal deve ter:
+
+    - `dotnet40`
+    - `msxml6`
+    - `riched20`
+    - `vcrun2013`
+    - `corefonts`
+
+    9.1 Você pode instalar tudo de uma vez manualmente:
+
+    ```bash
+    WINEPREFIX=~/.PlayOnLinux/wineprefix/wine314office2016pp winetricks dotnet40 msxml6 riched20 vcrun2013 corefonts
+    ```
 
 10. Selecione a guia `Wine` na tela Configuração `PlayOnLinux (POL)` e clique em `Configure Wine`.
 
