@@ -205,43 +205,39 @@ Aqui está um guia passo a passo:
     sudo apt full-upgrade -y
     ```
 
-3. **Remova a versão atual do `Wine` (opcional):** Se você já tem o `Wine` instalado e quer garantir uma instalação limpa, você pode remover a versão atual antes de instalar uma nova:
+3. Remova o repositório externo do WineHQ para evitar conflitos:
 
     ```bash
-    sudo apt remove --purge wine wine64 wine32 wine-stable wine-staging -y
+    sudo rm -f /etc/apt/sources.list.d/archive_uri-https_dl_winehq_org_wine-builds_ubuntu_-jammy.list
     ```
 
-4. Habilite a arquitetura `i386` (se ainda não estiver habilitada), pois muitos aplicativos do `Windows` requerem suporte para 32 bits:
+4. Corrija DNS (se voltar “Temporary failure resolving”):
+
+    ```bash
+    sudo systemctl restart systemd-resolved
+    sudo resolvectl flush-caches
+    ```
+
+5. Reative `i386` e repare pacotes:
 
     ```bash
     sudo dpkg --add-architecture i386
+    sudo apt update
+    sudo apt --fix-broken install -y
     ```
 
-5. **Instale a versão desejada do `Wine`**:
+6. Instale `wine32` pelos repositórios do `Linux Ubuntu`:
 
     ```bash
-    sudo apt install wine-stable:i386 smbclient winbind -y
-    wine --version
-    smbclient -V
-    winbindd -V
+    sudo apt install wine32:i386 playonlinux winbind cabextract p7zip-full -y
     ```
 
-    Se você quiser especificamente a versão `8.0.2`, você pode precisar baixar o pacote `.deb` correspondente diretamente do _site_ do `WineHQ` se ele estiver disponível para o `Linux Ubuntu`.
-
-8. **Verifique a versão instalada do `Wine`**:
+7. Valide:
 
     ```bash
     wine --version
+    dpkg -l | grep -E 'wine32|wine64|playonlinux'
     ```
-
-    Caso haja dependências não satisfeitas durante a instalação, o `apt` irá notificá-lo e, geralmente, você pode resolvê-las com o comando: 
-    
-    ```bash
-    sudo apt -f install
-    ```
-
-Depois de instalar o `Wine`, você pode tentar novamente instalar o `Microsoft Office 2016` usando o `PlayOnLinux` a partir da Seção `5`. Se você encontrar problemas de compatibilidade, considere também verificar se há scripts atualizados no `PlayOnLinux` para a instalação do `Office 2016`.
-
 
 ## 4. Configurar/Instalar/Usar o `Playonlinux` no `Linux Ubuntu` [1]
 
