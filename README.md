@@ -66,250 +66,21 @@ O `Microsoft Office 2016` é uma suíte de aplicativos de produtividade lançada
 
 7. Salvar o arquivo em um pasta.
 
-## 2. Como converter o arquivo `.iso` do `Microsoft Office 2016` em `.img` no `Linux Ubuntu` [4]
+## 2. Configurar/Instalar/Usar o `wine` para a versão mais atualizada e estável
 
-Para converter um arquivo `.iso` para `.img` no `Terminal Emulator` do `Linux Ubuntu`, você pode usar a ferramenta `dd`, que é um utilitário de linha de comando para converter e copiar arquivos. Aqui está um exemplo de como fazer isso:
+Para configurar/instalar/usar o `Wine` no `Linux Ubuntu`, você pode seguir os passos abaixo:
 
-1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
-
-    ```bash
-    Ctrl + Alt + T
-    ```
+1. **Aqui está um guia passo a passo**: `https://github.com/edftechnology/wine`
 
 
-2. Certifique-se de que seu sistema esteja limpo e atualizado.
+## 3. Configurar/Instalar/Usar o `playonlinux` para a versão mais atualizada e estável
 
-    2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando:
-    ```bash
-    sudo apt clean
-    ```
+Para atualizar o `playonlinux` no `Linux Ubuntu`, você pode seguir os passos abaixo:
 
-    2.2 Remover pacotes `.deb` antigos ou duplicados do `cache` local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando:
-    ```bash
-    sudo apt autoclean
-    ```
-
-    2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando:
-    ```bash
-    sudo apt autoremove -y
-    ```
-
-    2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`:
-    ```bash
-    sudo apt update
-    ```
-
-    2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes:
-    ```bash
-    sudo apt --fix-broken install
-    ```
-
-    2.6 Limpar o `cache` do gerenciador de pacotes `apt` novamente:
-    ```bash
-    sudo apt clean
-    ```
-
-    2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:
-    ```bash
-    sudo apt list --upgradable
-    ```
-
-    2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`:
-    ```bash
-    sudo apt full-upgrade -y
-    ```
-
-3. Use o comando `dd` com a seguinte sintaxe:
-
-    ```bash
-    sudo dd if=/caminho/para/arquivo.iso of=/caminho/para/arquivo.img bs=4M
-    ```
-
-    - `if=` especifica o arquivo de entrada (input file), que seria seu arquivo `.iso`.
-
-    - `of=` especifica o arquivo de saída (output file), que será o novo arquivo `.img`.
-
-    - `bs=4M` define o tamanho do bloco para 4 megabytes, o que pode ajudar a acelerar o processo de conversão.
-
-4. Pressione `Enter` para executar o comando.
-
-    Por exemplo, para converter um arquivo chamado `meu_disco.iso` localizado no diretório `Downloads` para um arquivo `meu_disco.img` no mesmo diretório, o comando seria:
-    
-    ```bash
-    sudo dd if=~/Downloads/meu_disco.iso of=~/Downloads/meu_disco.img bs=4M
-    ```
-
-Lembre-se de que este processo pode levar algum tempo, dependendo do tamanho do arquivo `.iso`. Além disso, tenha cuidado ao usar o comando `dd`, pois ele é muito poderoso e pode sobrescrever dados importantes se usado incorretamente.
+1. **Aqui está um guia passo a passo**: `https://github.com/edftechnology/playonlinux`
 
 
-## 3. Configurar/Instalar/Atualizar o `wine` para a versão mais atualizada e estável
-
-Para atualizar o `Wine` para a versão `8.0.2` no `Linux Ubuntu`, você pode seguir os passos abaixo. Note que estes passos são gerais e a disponibilidade de uma versão específica como `8.0.2` depende do repositório do `Wine` e se essa versão é oferecida para a distribuição do Ubuntu que você está usando.
-
-Aqui está um guia passo a passo:
-
-1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando:
-
-    ```bash
-    Ctrl + Alt + T
-    ```
-
-
-2. Certifique-se de que seu sistema esteja limpo e atualizado.
-
-    2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando:
-    
-    ```bash
-    sudo apt clean
-    ``` 
-    
-    2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando:
-    
-    ```bash
-    sudo apt autoclean
-    ```
-
-    2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando:
-    
-    ```bash
-    sudo apt autoremove -y
-    ```
-
-    2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: 
-    
-    ```bash
-    sudo apt update
-    ```
-
-    2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes:
-    
-    ```bash
-    sudo apt --fix-broken install
-    ```
-
-    2.6 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando:
-    
-    ```bash
-    sudo apt clean
-    ``` 
-    
-    2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  
-    
-    ```bash
-    sudo apt list --upgradable
-    ```
-
-    2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`:
-    
-    ```bash
-    sudo apt full-upgrade -y
-    ```
-
-3. Remova o repositório externo do WineHQ para evitar conflitos:
-
-    ```bash
-    sudo rm -f /etc/apt/sources.list.d/archive_uri-https_dl_winehq_org_wine-builds_ubuntu_-jammy.list
-    ```
-
-4. Corrija DNS (se voltar “Temporary failure resolving”):
-
-    ```bash
-    sudo systemctl restart systemd-resolved
-    sudo resolvectl flush-caches
-    ```
-
-5. Reative `i386` e repare pacotes:
-
-    ```bash
-    sudo dpkg --add-architecture i386
-    sudo apt update
-    sudo apt --fix-broken install -y
-    ```
-
-6. Instale `wine32` pelos repositórios do `Linux Ubuntu`:
-
-    ```bash
-    sudo apt install wine32:i386 playonlinux winbind cabextract p7zip-full winetricks -y
-    ```
-
-7. Valide:
-
-    ```bash
-    wine --version
-    dpkg -l | grep -E 'wine32|wine64|playonlinux'
-    ```
-
-## 4. Configurar/Instalar/Usar o `Playonlinux` no `Linux Ubuntu` [1]
-
-Para configuração/instalar/usar o `Playonlinux` no `Linux Ubuntu`, você pode seguir estas etapas:
-
-1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
-
-    ```bash
-    Ctrl + Alt + T
-    ```
-    
-
-2. Certifique-se de que seu sistema esteja limpo e atualizado.
-
-    2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando:
-    
-    ```bash
-    sudo apt clean
-    ``` 
-    
-    2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando:
-    
-    ```bash
-    sudo apt autoclean
-    ```
-
-    2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando:
-    
-    ```bash
-    sudo apt autoremove -y
-    ```
-
-    2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: 
-    
-    ```bash
-    sudo apt update
-    ```
-
-    2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes:
-    
-    ```bash
-    sudo apt --fix-broken install
-    ```
-
-    2.6 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando:
-    
-    ```bash
-    sudo apt clean
-    ``` 
-    
-    2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  
-    
-    ```bash
-    sudo apt list --upgradable
-    ```
-
-    2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`:
-    
-    ```bash
-    sudo apt full-upgrade -y
-    ```
-
-3. **Instalar `PlayOnLinux`:** Agora, instale o `PlayOnLinux` com o seguinte comando:
-
-    ```bash
-    sudo apt install playonlinux -y
-    ```
-
-Depois de instalado, você pode abrir o `PlayOnLinux` a partir do menu de aplicativos ou executando `playonlinux` no `Terminal Emulator`.
-
-
-## 5. Configurar o `PlayOnLinux (POL)` [5]
+## 4. Configurar o `PlayOnLinux (POL)` [5]
 
 **A considerar :** `Wine x86` versão `4.15` é mais estável que `3.4` (abaixo) ou `3.14` (postagem do `GlasierXplor` no `POL` Forum). Ou seja, ele não trava aleatoriamente. A ressalva é que haverá alguns problemas com as imagens, mas deverá funcionar bem 97% das vezes. O `Wine 4.15` requer a instalação da atualização `POL 4.3.4` dos repositórios oficiais do `PlayOnLinux (POL)`.
 
@@ -355,8 +126,10 @@ Depois de instalado, você pode abrir o `PlayOnLinux` a partir do menu de aplica
     9.1 Você pode instalar tudo de uma vez manualmente:
 
     ```bash
-    WINEPREFIX=~/.PlayOnLinux/wineprefix/wine314office2016pp winetricks dotnet40 msxml6 riched20 vcrun2013 corefonts
+    WINEPREFIX=~/.PlayOnLinux/wineprefix/wine34office2016pp winetricks dotnet40 msxml6 riched20 vcrun2013 corefonts
     ```
+
+    Perceba que, se você instalar o ambiente com outra versão do `wine`, você terá que alterar o `wine34office2016pp` conforme o nome que você criou.
 
 10. Selecione a guia `Wine` na tela Configuração `PlayOnLinux (POL)` e clique em `Configure Wine`.
 
@@ -385,7 +158,7 @@ Depois de instalado, você pode abrir o `PlayOnLinux` a partir do menu de aplica
 17 Feche o `Registry Editor` e retorne à tela Configuração do `PlayOnLinux (POL)`.
 
 
-## 6. Configurar/Instalar/Usar o `Microsoft Office 2016` no `Linux Ubuntu` (caso ainda não esteja instalado) [1]
+## 5. Configurar/Instalar/Usar o `Microsoft Office 2016` no `Linux Ubuntu` (caso ainda não esteja instalado) [1]
 
 Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga os passos abaixo::
 
@@ -552,119 +325,6 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
     <p>Fig. 12 Instalador do `Microsoft Office 2016`.</p>
 </div>
 
-
-Aqui estão os comandos correspondentes para cada etapa:
-
-## 1.4 Comentários sobre os comandos
-
-### Instalação dos pacotes `7zip`
-
-- **`sudo apt install p7zip-full p7zip-rar -y`:** Esse comando instala os pacotes `p7zip-full` e `p7zip-rar` no sistema. Estes são utilizados para descompactar arquivos `.7z`, que é um formato de arquivo compactado com alta taxa de compressão. O `p7zip-full` fornece o suporte ao formato `7z`, e o `p7zip-rar` adiciona suporte aos arquivos `.rar`. A opção `-y` é utilizada para confirmar automaticamente qualquer pergunta feita durante a instalação.
-
-### Descompactação de um arquivo `.iso`
-
-- **`7z x SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.iso`:** Este comando utiliza o `7zip` para extrair os arquivos de dentro de uma imagem ISO, que neste caso parece ser uma versão do Microsoft Office Professional Plus 2016. O comando `7z x` é usado para extrair os arquivos com as estruturas de diretórios intactas.
-
-### Instalação do `winbind`
-
-- **`sudo apt install winbind -y`:** Este comando instala o pacote `winbind`, que é uma parte do conjunto de ferramentas Samba. Ele permite que o sistema operacional Linux comunique-se com serviços de diretório do Windows, como Active Directory. O `winbind` pode ser necessário para algumas aplicações do Windows rodarem adequadamente no Linux, especialmente quando são executadas através do `Wine` ou `PlayOnLinux`. Novamente, `-y` é usado para aceitar todas as prompts automaticamente.
-
-### Instalação do `PlayOnLinux (POL)`
-
-- **`sudo apt install playonlinux-y`:** Aqui, estamos instalando o `playonlinux`, um front-end gráfico para o `Wine` que facilita a instalação e a execução de jogos e softwares desenvolvidos para o Windows em sistemas Linux. O `PlayOnLinux`usa scripts para fornecer uma instalação automatizada e configurada de muitos aplicativos e jogos do Windows.
-
-### Execução do `PlayOnLinux (POL)`
-
-- **`playonlinux`:** Este comando simplesmente inicia o PlayOnLinux. Depois de instalado, você pode rodá-lo sem necessidade de privilégios de superusuário.
-
-Esses comandos são típicos para um usuário que quer instalar e usar software do Windows em um sistema operacional Linux, especificamente para a instalação de software que não foi projetado nativamente para Linux.
-
-## 2. Código completo para configurar/instalar/usar
-
-### 2.1 Configurar/Instalar/Usar o `Wine` no `Linux Ubuntu`
-
-Para configurar/instalar/usar o `Wine` no `Linux Ubuntu`, execute os comando abaixo: 
-
-1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
-
-    ```bash
-    Ctrl + Alt + T
-    ```
-
-2. Digite o seguinte comando e pressione `Enter`:
-
-```bash
-sudo apt clean
-sudo apt autoclean
-sudo apt autoremove -y
-sudo apt update
-sudo apt --fix-broken install
-sudo apt clean
-sudo apt list --upgradable
-sudo apt full-upgrade -y
-sudo apt remove --purge wine wine64 wine32 wine-stable wine-staging -y
-sudo dpkg --add-architecture i386
-wget -nc https://dl.winehq.org/wine-builds/winehq.key
-sudo apt-key add winehq.key
-sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
-sudo apt update -y
-sudo apt install --install-recommends winehq-stable -y
-wine --version
-```
-
-
-
-### 2.3 Extrair o arquivo `.iso`
-
-Para extrair o arquivo `.iso`, execute os comandos abaixo:
-
-1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
-
-    ```bash
-    Ctrl + Alt + T
-    ```
-
-2. Digite o seguinte comando e pressione `Enter`:
-
-```bash
-sudo apt clean
-sudo apt autoclean
-sudo apt autoremove -y
-sudo apt update
-sudo apt --fix-broken install
-sudo apt clean
-sudo apt list --upgradable
-sudo apt full-upgrade -y
-sudo apt install p7zip-full p7zip-rar -y
-sudo mkdir SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353
-7z x SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.iso -oSW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353
-```
-
-### 2.3 Configurar/Instalar/Usar o `Playonlinux (POL)` no `Linux Ubuntu`
-
-Para configurar/instalar/usar o `PlayOnLinux (POL)` no `Linux Ubuntu`, execute os comando abaixo: 
-
-1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
-
-    ```bash
-    Ctrl + Alt + T
-    ```
-
-2. Digite o seguinte comando e pressione `Enter`:
-
-```bash
-sudo apt clean
-sudo apt autoclean
-sudo apt autoremove -y
-sudo apt update
-sudo apt --fix-broken install
-sudo apt clean
-sudo apt list --upgradable
-sudo apt full-upgrade -y
-sudo apt install winbind -y
-sudo apt install playonlinux-y
-playonlinux
-```
 
 ## Referências
 
