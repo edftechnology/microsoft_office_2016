@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_MODULUS=UGAQ5w7meikRbQH2BLcaodYzvC2pZxS0KjkHn0ktPV34KjyK3HcKlgET/IUPUJIgoKRhbu++isicETrYl9QqcUcOjAGi2WTdI17AEZhbwbwMnC4AbMEIn2ed9YdcMjMC4wrF/BJSpiazPYHGQfimX6dFpB6Z8Rm0GltgCwOtMkc=-->
+<!--_SIG=iritnR4s1xjMYM/qqoGajFboB3CRWHV3hxRwfg6B2Fbxo5jZYiV51MvYRV5J4fpNbw6Q4stK9jNG2PR4KrQOfzePBl7sYHirfEi3WIg+alSc0h4lSF+rdxB2xDUQuK0dgNqlD0/vrBesp/IIsSzbx90MQk6+LzPfFUR2El+XM14=-->
+<Setup Id="OSMUX.en-us" Type="AddOn" Keyword="OSMUXMUI" Culture="en-us">
+	<Option Id="AlwaysInstalled" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<Option Id="Gimme_OnDemandData" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<Option Id="ProductFiles" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="no">
+		<Option Id="TOOLSFiles" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no">
+			<Option Id="OsmSKUMain" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="yes" PreReq="IsProPlus;IsStandard;IsMondo;IsAccess;IsExcel;IsInfoPath;IsOneNote;IsOutlook;IsPowerPoint;IsPrjPro;IsPrjStd;IsPublisher;IsVisPro;IsVisStd;IsWord;IsProPlusR;IsStandardR;IsAccessR;IsExcelR;IsInfoPathR;IsOneNoteR;IsOutlookR;IsPowerPointR;IsPrjProR;IsPrjStdR;IsPublisherR;IsVisProR;IsVisStdR;IsWordR;IsC2RPackageOnMachineOSM">
+				<Option Id="OsmSKUAdminUX" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="yes" PreReq="IsProPlus;IsStandard;IsMondo;IsProPlusR;IsStandardR;IsC2RPackageOnMachineOSMUX"/>
+				<Option Id="OsmSKUClientUX" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="yes" PreReq="IsProPlus;IsStandard;IsMondo;IsProPlusR;IsStandardR;IsC2RPackageOnMachineOSMUX"/>
+			</Option>
+		</Option>
+	</Option>
+	<PackageRef Path="OSMUXMUI.xml"/>
+	<LocalCache DownloadCode="{90160000-00E2-0409-0000-0000000FF1CE}" SkuComponentDirectory="OSMUX.en-us">
+		<File Id="OSMUXMUI.xml" MD5="52C9B10ACAB2B05A12A41CDDA5C5A4E0" Size="0" RelativeCachePath="OSMUXMUI.xml" RelativeSourcePath="OSMUXMUI.xml"/>
+		<File Id="OSMUXMUI.msi" MD5="DFD61B556254AAE958DCADECE109EDCA" Size="1060864" RelativeCachePath="OSMUXMUI.msi" RelativeSourcePath="OSMUXMUI.msi"/>
+		<File Id="OSMUXMUI.cab" MD5="0C48B7657600C2F4AE6D2C2BD0A260AC" Size="4230701" RelativeCachePath="OSMUXMUI.cab" RelativeSourcePath="OSMUXMUI.cab"/>
+		<File Id="Setup.xml" MD5="" Size="" RelativeCachePath="Setup.xml" RelativeSourcePath="Setup.xml"/>
+	</LocalCache>
+</Setup>

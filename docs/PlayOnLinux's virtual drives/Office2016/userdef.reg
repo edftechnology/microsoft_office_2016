@@ -1,0 +1,86 @@
+WINE REGISTRY Version 2
+;; All keys relative to \\User\\.Default
+
+#arch=win32
+
+[Software\\Microsoft\\Office\\Outlook\\Addins\\OcOffice.OcForms] 1709128684
+#time=1da6a4e2661b812
+"Description"="Conversation History Add-in for Microsoft Office 2016"
+"FriendlyName"="Conversation History Add-in for Microsoft Office 2016"
+"LoadBehavior"=dword:00000003
+
+[Software\\Microsoft\\Office\\Outlook\\FormRegions\\IPM.Note.Microsoft.Conversation] 1709128684
+#time=1da6a4e266184e6
+"IPM.Note.Microsoft.Conversation.Region"="=OcOffice.OcForms"
+
+[Software\\Microsoft\\Office\\Outlook\\FormRegions\\IPM.Note.Microsoft.Conversation.Voice] 1709128684
+#time=1da6a4e26618d74
+"IPM.Note.Microsoft.Conversation.Voice.Region"="=OcOffice.OcForms"
+
+[Software\\Microsoft\\Office\\Outlook\\FormRegions\\IPM.Note.Microsoft.Missed] 1709128684
+#time=1da6a4e266195e4
+"IPM.Note.Microsoft.Missed.Region"="=OcOffice.OcForms"
+
+[Software\\Microsoft\\Office\\Outlook\\FormRegions\\IPM.Note.Microsoft.Missed.Voice] 1709128684
+#time=1da6a4e26619e7c
+"IPM.Note.Microsoft.Missed.Voice.Region"="=OcOffice.OcForms"
+
+[Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders] 1709128460
+#time=1da6a4da125d732
+"Administrative Tools"="C:\\users\\edenedfsls\\Start Menu\\Programs\\Administrative Tools"
+"AppData"="C:\\users\\edenedfsls\\Application Data"
+"Cache"="C:\\users\\edenedfsls\\Local Settings\\Temporary Internet Files"
+"Cookies"="C:\\users\\edenedfsls\\Cookies"
+"Desktop"="C:\\users\\edenedfsls\\Desktop"
+"Favorites"="C:\\users\\edenedfsls\\Favorites"
+"Fonts"="C:\\windows\\Fonts"
+"History"="C:\\users\\edenedfsls\\Local Settings\\History"
+"Local AppData"="C:\\users\\edenedfsls\\Local Settings\\Application Data"
+"My Music"="C:\\users\\edenedfsls\\My Music"
+"My Pictures"="C:\\users\\edenedfsls\\My Pictures"
+"My Videos"="C:\\users\\edenedfsls\\My Videos"
+"NetHood"="C:\\users\\edenedfsls\\NetHood"
+"Personal"="C:\\users\\edenedfsls\\My Documents"
+"PrintHood"="C:\\users\\edenedfsls\\PrintHood"
+"Programs"="C:\\users\\edenedfsls\\Start Menu\\Programs"
+"Recent"="C:\\users\\edenedfsls\\Recent"
+"SendTo"="C:\\users\\edenedfsls\\SendTo"
+"Start Menu"="C:\\users\\edenedfsls\\Start Menu"
+"StartUp"="C:\\users\\edenedfsls\\Start Menu\\Programs\\StartUp"
+"Templates"="C:\\users\\edenedfsls\\Templates"
+"{374DE290-123F-4565-9164-39C4925E467B}"="C:\\users\\edenedfsls\\Downloads"
+"{4C5C32FF-BB9D-43B0-B5B4-2D72E54EAAA4}"="C:\\users\\edenedfsls\\Saved Games"
+"{56784854-C6CB-462B-8169-88E350ACB882}"="C:\\users\\edenedfsls\\Contacts"
+"{7D1D3A04-DEBB-4115-95CF-2F29DA2920DA}"="C:\\users\\edenedfsls\\Searches"
+"{A520A1A4-1780-4FF6-BD18-167343C5AF16}"="C:\\users\\edenedfsls\\AppData\\LocalLow"
+"{BFB9D5E0-C6A9-404C-B2B2-AE6DB6AF4968}"="C:\\users\\edenedfsls\\Links"
+
+[Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders] 1709128460
+#time=1da6a4da125b16c
+"Administrative Tools"=str(2):"%USERPROFILE%\\Start Menu\\Programs\\Administrative Tools"
+"AppData"=str(2):"%USERPROFILE%\\Application Data"
+"Cache"=str(2):"%USERPROFILE%\\Local Settings\\Temporary Internet Files"
+"Cookies"=str(2):"%USERPROFILE%\\Cookies"
+"Desktop"=str(2):"%USERPROFILE%\\Desktop"
+"Favorites"=str(2):"%USERPROFILE%\\Favorites"
+"Fonts"=str(2):"C:\\windows\\Fonts"
+"History"=str(2):"%USERPROFILE%\\Local Settings\\History"
+"Local AppData"=str(2):"%USERPROFILE%\\Local Settings\\Application Data"
+"My Music"=str(2):"%USERPROFILE%\\My Music"
+"My Pictures"=str(2):"%USERPROFILE%\\My Pictures"
+"My Videos"=str(2):"%USERPROFILE%\\My Videos"
+"NetHood"=str(2):"%USERPROFILE%\\NetHood"
+"Personal"=str(2):"%USERPROFILE%\\My Documents"
+"PrintHood"=str(2):"%USERPROFILE%\\PrintHood"
+"Programs"=str(2):"%USERPROFILE%\\Start Menu\\Programs"
+"Recent"=str(2):"%USERPROFILE%\\Recent"
+"SendTo"=str(2):"%USERPROFILE%\\SendTo"
+"Start Menu"=str(2):"%USERPROFILE%\\Start Menu"
+"StartUp"=str(2):"%USERPROFILE%\\Start Menu\\Programs\\StartUp"
+"Templates"=str(2):"%USERPROFILE%\\Templates"
+"{374DE290-123F-4565-9164-39C4925E467B}"=str(2):"%USERPROFILE%\\Downloads"
+"{4C5C32FF-BB9D-43B0-B5B4-2D72E54EAAA4}"=str(2):"%USERPROFILE%\\Saved Games"
+"{56784854-C6CB-462B-8169-88E350ACB882}"=str(2):"%USERPROFILE%\\Contacts"
+"{7D1D3A04-DEBB-4115-95CF-2F29DA2920DA}"=str(2):"%USERPROFILE%\\Searches"
+"{A520A1A4-1780-4FF6-BD18-167343C5AF16}"=str(2):"%USERPROFILE%\\AppData\\LocalLow"
+"{BFB9D5E0-C6A9-404C-B2B2-AE6DB6AF4968}"=str(2):"%USERPROFILE%\\Links"

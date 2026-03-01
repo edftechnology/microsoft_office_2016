@@ -1,0 +1,13 @@
+﻿<!-- Task definition created by Wine -->
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Source>$(@%ProgramFiles%\Common Files\Microsoft Shared\OfficeSoftwareProtectionPlatform\osppc.dll,-200)</Source>
+    <Author>$(@%ProgramFiles%\Common Files\Microsoft Shared\OfficeSoftwareProtectionPlatform\osppc.dll,-200)</Author>
+    <Version>1.0</Version>
+    <Description>$(@%ProgramFiles%\Common Files\Microsoft Shared\OfficeSoftwareProtectionPlatform\osppc.dll,-201)</Description>
+  </RegistrationInfo>
+  <Principals>
+    <Principal>
+    </Principal>
+  </Principals>
+</Task>

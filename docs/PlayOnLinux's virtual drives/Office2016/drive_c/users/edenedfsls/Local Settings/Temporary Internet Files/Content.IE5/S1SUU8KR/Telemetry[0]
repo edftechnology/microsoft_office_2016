@@ -1,0 +1,80 @@
+/******************************************************************************
+    Owner(s): kotai
+    Copyright (c) Microsoft Corporation.
+******************************************************************************/
+var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+/**
+* OdcSmUlsHost class for remoteUls host.
+*/
+var OdcSmUlsHost = (function (_super) {
+    __extends(OdcSmUlsHost, _super);
+    function OdcSmUlsHost(sessionId) {
+        var maxSize = 5 * 1024;
+        var uploadCadenceMs = 30000; // upload log every 30 seconds
+        var config = new Diag.UlsUploadConfiguration(maxSize, null, uploadCadenceMs);
+        _super.call(this, sessionId, '/odc/' + Diag.UploadingUlsHost.defaultRemoteUlsUrl, config);
+    }
+    return OdcSmUlsHost;
+})(Diag.UploadingUlsHost);
+/**
+* Browser Logging class.
+*/
+var BrowserLogger = (function () {
+    /**
+    * Constructor for the class
+    */
+    function BrowserLogger() {
+        var _this = this;
+        /**
+        * Call at any error instance
+        * @param event The error event
+        * @param source url where error originated from
+        * @param lineNumber line number where error originated from
+        */
+        this.errorHandlerFunction = function (event, source, lineNumber) {
+            var logMessage = 'Error (' + event + ') encountered in (' + source + ') at line number (' + lineNumber + ')';
+            Diag.ULS.sendTraceTag(0x015c730d, featureCategory, Diag.ULSTraceLevel.error, '{0}', logMessage);
+        };
+        var uploadingHost = new OdcSmUlsHost('0');
+        Diag.ULS.setUlsHost(uploadingHost);
+        $(document).ready(this.onReady);
+        $(document).click(this.onClick);
+        window.onerror = this.errorHandlerFunction;
+        window.onbeforeunload = function () { return _this.DisposeLogging(uploadingHost); };
+    }
+    /**
+    * Dispose uploader host
+    */
+    BrowserLogger.prototype.DisposeLogging = function (uploader) {
+        uploader.flushForAppClose();
+        uploader.dispose();
+    };
+    /**
+    * Call at the on ready event
+    */
+    BrowserLogger.prototype.onReady = function () {
+        Diag.ULS.sendTraceTag(0x015c730e, featureCategory, Diag.ULSTraceLevel.info, 'Ready');
+    };
+    /**
+    * Call at every click event
+    * @param event the event which occurred
+    */
+    BrowserLogger.prototype.onClick = function (event) {
+        var target = $(event.target);
+        if (target[0].id != "") {
+            var logMessage = 'Click (id:' + target[0].id + ')';
+            Diag.ULS.sendTraceTag(0x015c730f, featureCategory, Diag.ULSTraceLevel.info, logMessage);
+        }
+        else if (target[0].className != "") {
+            var logMessage = 'Click (class:' + target[0].className + ')';
+            Diag.ULS.sendTraceTag(0x015c7310, featureCategory, Diag.ULSTraceLevel.info, logMessage);
+        }
+    };
+    return BrowserLogger;
+})();
+var BrowserLoggerObject = new BrowserLogger();

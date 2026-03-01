@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_MODULUS=SxYwcAiv1O+8Pbez9A/Sg8x5Kme8tWRNWWNu606mLWcApIveGBhl6uCc1RgtQz2B+kWqGKTYxNuOrhKOPq+20zht6LYpuDc3Zp1recco7T2VwPO43uRk7cSGYcT1TaaNf8H9Bm+QilbexEnwCWmNpXHO2NS2qCmfZscetHaSlFg=-->
+<!--_SIG=dv9UUDAJQu8k42Ydx0MzpgmdTk1BDp2ckzf0uPUQiJUcnOXouHkxungecBM6blUTQ66SMcDmrXObmXr0CaFOvi8Eb0Cx9wn5wIWFhquU8VJKrOQ48J6Mhlzc5Kk/FfOIOBsEuP5qoyvO6QsiMK1oZ1vpiJ6ygvxFlDfsTjnn41g=-->
+<Package Id="ExcelMUI.en-us" Type="MSI" Path="ExcelMUI.MSI" Version="1.0" ProductCode="{90160000-0016-0409-0000-0000000FF1CE}" MSIVersion="16.0.4266.1001" ProductLanguage="1033" Platform="x86">
+	<Feature Id="ExcelAddinATPFilesIntl_1033" Cost="1124098">
+		<OptionRef Id="ExcelAddinATPFiles"/>
+	</Feature>
+	<Feature Id="WhiteRabbitHiddenIntl_1033" Cost="57344">
+		<OptionRef Id="WhiteRabbitHidden"/>
+	</Feature>
+	<Feature Id="Gimme_OnDemandData" Cost="0">
+		<OptionRef Id="Gimme_OnDemandData"/>
+	</Feature>
+	<Feature Id="ExcelSampleFilesIntl_1033" Cost="118784">
+		<OptionRef Id="ExcelSampleFiles"/>
+	</Feature>
+	<Feature Id="ExcelAddinSolverFilesIntl_1033" Cost="1100302">
+		<OptionRef Id="ExcelAddinSolverFiles"/>
+	</Feature>
+	<Feature Id="ExcelHelpFilesIntl_1033" Cost="1756352">
+		<OptionRef Id="ExcelHelpFiles"/>
+	</Feature>
+	<Feature Id="SetupXmlFiles" Cost="468">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="EXCELNonBootFilesIntl_1033" Cost="2973157">
+		<OptionRef Id="EXCELFiles"/>
+	</Feature>
+	<Feature Id="SetupControllerFiles" Cost="468">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="EXCELFilesIntl_1033" Cost="18533944">
+		<OptionRef Id="EXCELFiles"/>
+	</Feature>
+	<Feature Id="MsoInstalledPackagesScopedIntl_1033" Cost="0">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+</Package>

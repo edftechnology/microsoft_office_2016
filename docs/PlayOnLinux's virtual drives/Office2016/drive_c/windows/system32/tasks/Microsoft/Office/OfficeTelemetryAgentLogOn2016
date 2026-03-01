@@ -1,0 +1,14 @@
+﻿<!-- Task definition created by Wine -->
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>This task initiates Office Telemetry Agent, which scans and uploads usage and error information for Office solutions when a user logs on to the computer.</Description>
+  </RegistrationInfo>
+  <Triggers/>
+  <Principals>
+    <Principal>
+    </Principal>
+  </Principals>
+  <Actions>
+    <Exec/>
+  </Actions>
+</Task>

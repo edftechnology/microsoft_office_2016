@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_MODULUS=LsoTcUB5C8dSiiuygRP8E/9/uJwpcHz8HYQovIh34dTRAUqLRqEnEURMsh/Kc/H4pB8wny7gwrIzlB9BqwfMOgMh+PRcSmzfD+3phP5X/zuHRv/XVEwe2WZMahAcqt2Xi7O87DCRlykhSMcTo8CSxz5TQd2KrnOBaf0tlAYblw4=-->
+<!--_SIG=hb40ylXLX0DIOwxOpdm1VcTTslCMo7/AcpwECaqp30Nnmr8PzjSGZUpowKGghSykQu3v+Lix/nU1TzKpbcVD0q1/ZO2OuWcovxz6Wu5zgyHnhdNLAFip9lG69l9oOSbSiCbH20rbFNYPkM7B6yRjzf1nv37tkb+0EGK/386dIZE=-->
+<Package Id="LyncMUI.en-us" Type="MSI" Path="LyncMUI.MSI" Version="1.0" ProductCode="{90160000-012B-0409-0000-0000000FF1CE}" MSIVersion="16.0.4266.1001" ProductLanguage="1033" Platform="x86">
+	<Feature Id="LyncMUICoreIntl_1033" Cost="4049040">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="Gimme_OnDemandData" Cost="0">
+		<OptionRef Id="Gimme_OnDemandData"/>
+	</Feature>
+	<Feature Id="SetupXmlFiles" Cost="468">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="SetupControllerFiles" Cost="468">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="MsoInstalledPackagesScopedIntl_1033" Cost="0">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="LyncHelpFilesIntl_1033" Cost="933623">
+		<OptionRef Id="LyncHelpFiles"/>
+	</Feature>
+</Package>
