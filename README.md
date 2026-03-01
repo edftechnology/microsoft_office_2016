@@ -205,7 +205,7 @@ Aqui está um guia passo a passo:
     sudo apt full-upgrade -y
     ```
 
-3. **Remova a versão atual do `Wine` (opcional):** Se você já tem o Wine instalado e quer garantir uma instalação limpa, você pode remover a versão atual antes de instalar uma nova:
+3. **Remova a versão atual do `Wine` (opcional):** Se você já tem o `Wine` instalado e quer garantir uma instalação limpa, você pode remover a versão atual antes de instalar uma nova:
 
     ```bash
     sudo apt remove --purge wine wine64 wine32 wine-stable wine-staging -y
@@ -217,26 +217,10 @@ Aqui está um guia passo a passo:
     sudo dpkg --add-architecture i386
     ```
 
-5. **Adicione o repositório do `WineHQ`**:
+5. **Instale a versão desejada do `Wine`**:
 
     ```bash
-    wget -nc https://dl.winehq.org/wine-builds/winehq.key
-    sudo apt-key add winehq.key
-    sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
-    ```
-
-6. **Atualize os pacotes**:
-
-    ```bash
-    sudo apt update
-    ```
-
-7. **Instale a versão desejada do `Wine`**:
-
-    7.1 Para a versão estável:
-    
-    ```bash
-    sudo apt-get install wine-stable:i386 smbclient winbind
+    sudo apt install wine-stable:i386 smbclient winbind -y
     wine --version
     smbclient -V
     winbindd -V
@@ -331,7 +315,7 @@ Depois de instalado, você pode abrir o `PlayOnLinux` a partir do menu de aplica
 
 ## 5. Configurar o `PlayOnLinux (POL)` [5]
 
-**A considerar :** `Wine x86` versão `4.15` é mais estável que `3.4` (abaixo) ou `3.14` (postagem do GlasierXplor no `POL` Forum). Ou seja, ele não trava aleatoriamente. A ressalva é que haverá alguns problemas com as imagens, mas deverá funcionar bem 97% das vezes. O `Wine 4.15` requer a instalação da atualização `POL 4.3.4` dos repositórios oficiais do `PlayOnLinux (POL)`.
+**A considerar :** `Wine x86` versão `4.15` é mais estável que `3.4` (abaixo) ou `3.14` (postagem do `GlasierXplor` no `POL` Forum). Ou seja, ele não trava aleatoriamente. A ressalva é que haverá alguns problemas com as imagens, mas deverá funcionar bem 97% das vezes. O `Wine 4.15` requer a instalação da atualização `POL 4.3.4` dos repositórios oficiais do `PlayOnLinux (POL)`.
 
 1. A versão `3.4` do `Wine x86` foi usada para esta instalação, então verifique se ele está instalado iniciando o `PlayOnLinux (POL)` e selecionando `Tools-> Manage Wine Versions`. Janela Gerenciar versões do `Wine` com `x86` versão `3.4` instalada
 
@@ -670,7 +654,7 @@ sudo apt clean
 sudo apt list --upgradable
 sudo apt full-upgrade -y
 sudo apt install winbind -y
-sudo apt install `PlayOnLinux`-y
+sudo apt install playonlinux-y
 playonlinux
 ```
 
