@@ -82,20 +82,29 @@ Para atualizar o `playonlinux` no `Linux Ubuntu`, você pode seguir os passos ab
 
 ## 4. Configurar o `PlayOnLinux (POL)` [5]
 
-**A considerar :** `Wine x86` versão `4.15` é mais estável que `3.4` (abaixo) ou `3.14` (postagem do `GlasierXplor` no `POL` Forum). Ou seja, ele não trava aleatoriamente. A ressalva é que haverá alguns problemas com as imagens, mas deverá funcionar bem 97% das vezes. O `Wine 4.15` requer a instalação da atualização `POL 4.3.4` dos repositórios oficiais do `PlayOnLinux (POL)`.
+**A considerar :** `Wine x86` versão `4.15` é mais estável que `3.4` (abaixo) ou `3.14` (postagem
+do `GlasierXplor` no `POL` Fórum). Ou seja, ele não trava aleatoriamente. A ressalva é que haverá
+alguns problemas com as imagens, mas deverá funcionar bem 97% das vezes. O `Wine 4.15` requer a 
+instalação da atualização `POL 4.3.4` dos repositórios oficiais do `PlayOnLinux (POL)`.
 
-1. A versão `3.4` do `Wine x86` foi usada para esta instalação, então verifique se ele está instalado iniciando o `PlayOnLinux (POL)` e selecionando `Tools-> Manage Wine versions`. Janela Gerenciar versões do `Wine` com `x86` versão `3.4` instalada
+1. A versão `3.4` do `Wine x86` foi usada para esta instalação, então verifique se ele está
+instalado iniciando o `PlayOnLinux (POL)` e selecionando `Tools-> Manage Wine versions`. Janela
+Gerenciar versões do `Wine` com `x86` versão `3.4` instalada
 
 <div align="center">
     <img src="docs/figures/fig14.png" alt="Minha Imagem" />
     <p>Fig. 14 .</p>
 </div>
 
-2. Se o `Wine x86` versão `3.4` não aparecer em `Installed Wine versions`, selecione-a na janela `Available Wine versions:` e clique no botão `>` meio da janela para instalá-lo. Depois de instalado, **feche** e saia para o menu principal do `PlayOnLinux (POL)`.
+2. Se o `Wine x86` versão `3.4` não aparecer em `Installed Wine versions`, selecione-a na janela
+`Available Wine versions:` e clique no botão `>` meio da janela para instalá-lo. Depois de
+instalado, **feche** e saia para o menu principal do `PlayOnLinux (POL)`.
 
-3. No `PlayOnLinux (POL)`, selecione `Configure` para entrar na tela de configuração e clique `New` no canto inferior esquerdo para iniciar o criador do _drive_ virtual.
+3. No `PlayOnLinux (POL)`, selecione `Configure` para entrar na tela de configuração e clique `New`
+no canto inferior esquerdo para iniciar o criador do _drive_ virtual.
 
-4. Selecione instalação do `Windows` de `32 bits` e pressione `Next`. Jogue no `Linux 32` instalação do `Windows` de `32 bits`
+4. Selecione instalação do `Windows` de `32 bits` e pressione `Next`. Jogue no `Linux 32`
+instalação do `Windows` de `32 bits`
 
 <div align="center">
     <img src="docs/figures/fig15.png" alt="Minha Imagem" />
@@ -104,11 +113,15 @@ Para atualizar o `playonlinux` no `Linux Ubuntu`, você pode seguir os passos ab
 
 5. Selecione `Wine` versão `3.4` e pressione `Next`.
 
-6. Dê um nome ao _drive_ virtual (por exemplo `office2016pp`) e pressione `Next` para iniciar a criação. Selecione para instalar o Mono se o `POL` solicitar.
+6. Dê um nome ao _drive_ virtual (por exemplo `wine34office2016pp`) e pressione `Next` para iniciar a
+criação. Selecione para instalar o `Mono` se o `POL` solicitar.
 
-7. Assim que a criação da unidade virtual for concluída, você deverá retornar à tela principal de configuração do `PlayOnLinux (POL)`. Certifique-se de que a unidade recém-criada (por exemplo `office2016pp`) esteja selecionada na janela esquerda.
+7. Assim que a criação da unidade virtual for concluída, você deverá retornar à tela principal de
+configuração do `PlayOnLinux (POL)`. Certifique-se de que a unidade recém-criada (por exemplo
+`wine34office2016pp`) esteja selecionada na janela esquerda.
 
-8. Clique na guia `Install components` na parte superior. Em seguida, role para baixo para selecionar `msxml6e` clique em `Install`.
+8. Clique na guia `Install components` na parte superior. Em seguida, role para baixo para
+selecionar `msxml6e` clique em `Install`.
 
 <div align="center">
     <img src="docs/figures/fig16.png" alt="Minha Imagem" />
@@ -124,7 +137,7 @@ Para atualizar o `playonlinux` no `Linux Ubuntu`, você pode seguir os passos ab
     - `riched20`
 
     - `vcrun2013`
-    
+
     - `corefonts`
 
     9.1 Você pode instalar tudo de uma vez manualmente:
@@ -133,26 +146,33 @@ Para atualizar o `playonlinux` no `Linux Ubuntu`, você pode seguir os passos ab
     WINEPREFIX=~/.PlayOnLinux/wineprefix/wine34office2016pp winetricks dotnet40 msxml6 riched20 vcrun2013 corefonts
     ```
 
-    Perceba que, se você instalar o ambiente com outra versão do `wine`, você terá que alterar o `wine34office2016pp` conforme o nome que você criou.
+    Perceba que, se você instalar o ambiente com outra versão do `wine`, você terá que alterar o
+    nome de `wine34office2016pp` conforme o nome que você criou, por exemplo, para a versão do
+    `wine 3.14` pode ser `wine314office2016pp`.
 
 10. Selecione a guia `Wine` na tela Configuração `PlayOnLinux (POL)` e clique em `Configure Wine`.
 
-11. Assim que a tela Configuração do `Wine` aparecer, clique na guia `Libraries`. Clique em `Edit...` para alterar `msxml6` e `riched20` para `(native, builtin)` ou `Native then Builtin`.
+11. Assim que a tela Configuração do `Wine` aparecer, clique na guia `Libraries`. Clique em
+`Edit...` para alterar `msxml6` e `riched20` para `(native, builtin)` ou `Native then Builtin`.
 
 <div align="center">
     <img src="docs/figures/fig17.png" alt="Minha Imagem" />
     <p>Fig. 17 .</p>
 </div>
 
-12. Na tela de configuração do Wine, clique na aba `Applications` e certifique-se de que `Windows 7` esteja selecionada como a versão do Windows. Saia para a tela de configuração do `PlayOnLinux (POL)`.
+12. Na tela de configuração do Wine, clique na aba `Applications` e certifique-se de que
+`Windows 7` esteja selecionada como a versão do Windows. Saia para a tela de configuração do
+`PlayOnLinux (POL)`.
 
-13. Selecione a guia `Wine` na tela Configuração `PlayOnLinux (POL)` e clique em `Registry Editor` para abrir o Editor do Registro.
+13. Selecione a guia `Wine` na tela Configuração `PlayOnLinux (POL)` e clique em `Registry Editor`
+para abrir o Editor do Registro.
 
 14. Selecione para `HKEY_CURRENT_USER-> Software-> Wine`
 
 15. Clique `Edit-> New-> Key` e nomeie esta chave `Direct2D`.
 
-16. Selecione `Direct2D` e então `Edit-> New-> DWORD Value` e nomeie para `max_version_factory` com um valor de `0`.
+16. Selecione `Direct2D` e então `Edit-> New-> DWORD Value` e nomeie para `max_version_factory`
+com um valor de `0`.
 
 <div align="center">
     <img src="docs/figures/fig18.png" alt="Minha Imagem" />
