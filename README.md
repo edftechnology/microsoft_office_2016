@@ -386,15 +386,38 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-17. Clicar em `Next`:
+17. Clicar em `Use a setup file in my computer` e clicar em `Next`:
 
 <div align="center">
-    <img src="docs/figures/playonlinux_the_wizard_will_help_you_install_microsoft_office_2016_on_your_computer.png" alt="Minha Imagem" />
-    <p>Fig. 19. `PlayOnLinux - Welcome to PlayOnLinux Installation Wizard`.</p>
+    <img src="docs/figures/playonlinux_please_choose_an_installation_method.png" alt="Minha Imagem" />
+    <p>Fig. 19. `PlayOnLinux - Please choose an installation method`.</p>
 </div>
 
 
-18. Seguir com as instruções do arquivo de instalação executável`.exe`
+18. Clicar em `Browse`:
+
+<div align="center">
+    <img src="docs/figures/playonlinux_please_select_the_setup_file_to_run.png" alt="Minha Imagem" />
+    <p>Fig. 20. `PlayOnLinux - Please select the setup file to run`.</p>
+</div>
+
+
+19. Selecionar o arquivo e apertar o `Open`, depois clicar em `Next`:
+
+<div align="center">
+    <img src="docs/figures/playonlinux_selecionar_o_arquivo_e_apertar_o_open.png" alt="Minha Imagem" />
+    <p>Fig. 21. `PlayOnLinux - Selecionar o arquivo e apertar o `Open`..</p>
+</div>
+
+20. Clicar em `Next`:
+
+<div align="center">
+    <img src="docs/figures/playonlinux_the_wizard_will_help_you_install_microsoft_office_2016_on_your_computer.png" alt="Minha Imagem" />
+    <p>Fig. 22. `PlayOnLinux - Welcome to PlayOnLinux Installation Wizard`.</p>
+</div>
+
+
+21. Seguir com as instruções do arquivo de instalação executável`.exe`
 
 <div align="center">
     <img src="docs/figures/fig12.png" alt="Minha Imagem" />
