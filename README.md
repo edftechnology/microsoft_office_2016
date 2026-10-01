@@ -95,7 +95,7 @@ Gerenciar versões do `Wine` com `x86` versão `3.4` instalada
 
 <div align="center">
     <img src="docs/figures/fig14.png" alt="Minha Imagem" />
-    <p>Fig. 14 .</p>
+    <p>Fig. 14. PlayOnLinux wine versions manager.</p>
 </div>
 
 2. Se o `Wine x86` versão `3.4` não aparecer em `Installed Wine versions`, selecione-a na janela
@@ -110,7 +110,7 @@ instalação do `Windows` de `32 bits`
 
 <div align="center">
     <img src="docs/figures/fig15.png" alt="Minha Imagem" />
-    <p>Fig. 15 .</p>
+    <p>Fig. 15. PlayOnLinux Wizard .</p>
 </div>
 
 5. Selecione `Wine` versão `3.4` e pressione `Next`.
@@ -133,7 +133,7 @@ selecionar `msxml6e` clique em `Install`.
 
 <div align="center">
     <img src="docs/figures/fig16.png" alt="Minha Imagem" />
-    <p>Fig. 16 .</p>
+    <p>Fig. 16. PLayOnLinux configuration .</p>
 </div>
 
 2. **Repita a etapa acima para instalar o(s) componente(s)**: o prefixo ideal deve ter:
@@ -171,12 +171,17 @@ Ao invés de instalar os componentes pelo `PlayOnLinux (POL)`, você pode instal
 
 <div align="center">
     <img src="docs/figures/fig17.png" alt="Minha Imagem" />
-    <p>Fig. 17 .</p>
+    <p>Fig. 17. Wine Configuration - Edit override.</p>
 </div>
 
-3. Na tela de configuração do Wine, clique na aba `Applications` e certifique-se de que
-`Windows 7` esteja selecionada como a versão do Windows. Saia para a tela de configuração do
+3. Na tela de configuração do `Wine`, clique na aba `Applications` e certifique-se de que
+`Windows 7` esteja selecionada como a versão do `Windows`. Saia para a tela de configuração do
 `PlayOnLinux (POL)`.
+
+<div align="center">
+    <img src="docs/figures/wine_configuration_applications.png" alt="Minha Imagem" />
+    <p>Fig. 18. Wine Configuration - Applications.</p>
+</div>
 
 4. Selecione a guia `Wine` na tela Configuração `PlayOnLinux (POL)` e clique em `Registry Editor`
 para abrir o Editor do Registro.
@@ -190,7 +195,7 @@ com um valor de `0`.
 
 <div align="center">
     <img src="docs/figures/fig18.png" alt="Minha Imagem" />
-    <p>Fig. 18 .</p>
+    <p>Fig. 18. Registry Editor .</p>
 </div>
 
 8. Feche o `Registry Editor` e retorne à tela Configuração do `PlayOnLinux (POL)`.
