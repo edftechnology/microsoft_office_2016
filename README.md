@@ -118,9 +118,13 @@ Para atualizar o `playonlinux` no `Linux Ubuntu`, você pode seguir os passos ab
 9. **Repita a etapa acima para instalar o(s) componente(s)**: o prefixo ideal deve ter:
 
     - `dotnet40`
+
     - `msxml6`
+
     - `riched20`
+
     - `vcrun2013`
+    
     - `corefonts`
 
     9.1 Você pode instalar tudo de uma vez manualmente:
@@ -328,11 +332,27 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 
 ## Referências
 
-[1] OPENAI. ***Instalar o `microsoft office 2016` no `linux ubuntu` pelo `terminal emulator`.*** Disponível em: <https://chat.openai.com/c/f4373ad1-fde7-48c6-933a-91a70564cb26> (texto adaptado). Acessado em: 05/11/2023 23:22.
+[1] OPENAI.
+**Instalar o `microsoft office 2016` no `linux ubuntu` pelo `terminal emulator`.**
+Disponível em: <https://chat.openai.com/c/f4373ad1-fde7-48c6-933a-91a70564cb26> (texto adaptado).
+ChatGPT.
+Acessado em: 05/11/2023 23:22.
 
-[2] OPENAI. ***Instalar o `bottles` no `linux ubuntu` pelo `terminal emulator`.*** Disponível em: <https://chat.openai.com/c/92444ccc-f995-4e9c-8f03-678931882241> (texto adaptado). Acessado em: 01/11/2023 19:17.
+[2] OPENAI.
+**Instalar o `bottles` no `linux ubuntu` pelo `terminal emulator`.**
+Disponível em: <https://chat.openai.com/c/92444ccc-f995-4e9c-8f03-678931882241> (texto adaptado).
+ChatGPT.
+Acessado em: 01/11/2023 19:17.
 
-[3] OPENAI. ***Extrair iso com 7-zip.*** Disponível em: <https://chat.openai.com/c/9aeb16fc-d4dc-4a5b-a7eb-cd82d851d7b7> (texto adaptado). Acessado em: 06/11/2023 09:37.
+[3] OPENAI.
+**Extrair iso com 7-zip.**
+Disponível em: <https://chat.openai.com/c/9aeb16fc-d4dc-4a5b-a7eb-cd82d851d7b7> (texto adaptado).
+ChatGPT.
+Acessado em: 06/11/2023 09:37.
 
-[4] OPENAI. ***Converter arquivo `.iso` em `.img`.*** Disponível em: <https://chat.openai.com/c/498fa917-4067-4fc5-b69d-31c9514dc47e> (texto adaptado). Acessado em: 23/11/2023 13:47.
+[4] OPENAI.
+**Converter arquivo `.iso` em `.img`.**
+Disponível em: <https://chat.openai.com/c/498fa917-4067-4fc5-b69d-31c9514dc47e> (texto adaptado).
+ChatGPT.
+Acessado em: 23/11/2023 13:47.
 
