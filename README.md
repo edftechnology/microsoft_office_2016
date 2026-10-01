@@ -262,65 +262,75 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
     sudo apt full-upgrade -y
     ```
 
-3. Para instalar o `7zip`, digitar o comando:
+3. **Adicionar os repos oficiais do `Linux Ubuntu`**: Execute:
 
     ```bash
-    udo apt install p7zip-full p7zip-rar -y
+    sudo add-apt-repository main -y
+    sudo add-apt-repository restricted -y
+    sudo add-apt-repository universe -y
+    sudo add-apt-repository multiverse -y
+    sudo apt update
     ```
-
-4. Cria a pasta com o mesmo nome do arquivo `.iso`, se ela não existir:
+    
+4. Para instalar o `7zip`, digitar o comando:
 
     ```bash
-    mkdir -p SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353
+    sudo apt install p7zip-full -y
     ```
 
-5. Para extrair o arquivo `.iso`, digitar o comando:
+5. Cria a pasta com o mesmo nome do arquivo `.iso`, se ela não existir:
 
     ```bash
-    7z x SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.iso -oSW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353
+    mkdir -pv SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353
+    ``` 
+
+6. Para extrair o arquivo `.iso`, digitar o comando:
+
+    ```bash
+    7z x SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.iso -o SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353
     ```
 
-6. Para instalar o `winbind`, digitar o comando:
+7. Para instalar o `winbind`, digitar o comando:
 
     ```bash
     sudo apt install winbind -y
     ```
 
-7. Para instalar o `playonlinux`, digitar o comando:
+8. Para instalar o `playonlinux`, digitar o comando:
 
-    7.1  **Instalar dependências necessárias**: Primeiro, instale as dependências necessárias para compilar o `wxPython`:
+    8.1  **Instalar dependências necessárias**: Primeiro, instale as dependências necessárias para compilar o `wxPython`:
 
     ```bash
     sudo apt update
     sudo apt install build-essential libgtk-3-dev libjpeg-dev libtiff-dev libpng-dev libwxgtk3.0-gtk3-dev
     ```
 
-    7.2 **Tentar instalar `wxPython` novamente**: Agora, tente instalar o `wxPython` novamente usando `pip`: 
+    8.2 **Tentar instalar `wxPython` novamente**: Agora, tente instalar o `wxPython` novamente usando `pip`: 
     
     ```bash
     python3 -m pip install wxPython
     ```
 
-    7.3 **Instalar o `playonlinux`**:
+    8.3 **Instalar o `playonlinux`**:
     
     ```bash
     sudo apt install playonlinux -y
     ```
 
-    7.4 **Instalar o módulo `natsort`**: Use o pip para instalar o módulo `natsort`:
+    8.4 **Instalar o módulo `natsort`**: Use o pip para instalar o módulo `natsort`:
     
     ```bash
     python3.11 -m pip install natsort
     ```
 
-8. Para abrir o `playonlinux`, digitar o comando:
+9. Para abrir o `playonlinux`, digitar o comando:
 
     ```bash
     playonlinux
     ```
 
 
-8. Clicar em `Install`:
+10. Clicar em `Install`:
 
 <div align="center">
     <img src="docs/figures/fig7.png" alt="Minha Imagem" />
@@ -328,7 +338,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-9. Clicar em `Search`:
+11. Clicar em `Search`:
 
 <div align="center">
     <img src="docs/figures/fig8.png" alt="Minha Imagem" />
@@ -336,7 +346,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-10. Digitar `Microsoft Office 2016`:
+12. Digitar `Microsoft Office 2016`:
 
 <div align="center">
     <img src="docs/figures/fig9.png" alt="Minha Imagem" />
@@ -344,7 +354,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-11. Clicar em `Microsoft Office 2016 (method B)`:
+13. Clicar em `Microsoft Office 2016 (method B)`:
 
 <div align="center">
     <img src="docs/figures/fig10.png" alt="Minha Imagem" />
@@ -353,7 +363,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 
 
 
-12. Clicar em `Install`:
+14. Clicar em `Install`:
 
 <div align="center">
     <img src="docs/figures/fig11.png" alt="Minha Imagem" />
@@ -361,7 +371,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-13. Seguir com as instruções do arquivo de instalação executável`.exe`
+15. Seguir com as instruções do arquivo de instalação executável`.exe`
 
 <div align="center">
     <img src="docs/figures/fig12.png" alt="Minha Imagem" />
