@@ -22,14 +22,14 @@ O `Microsoft Office 2016` é uma suíte de aplicativos de produtividade lançada
 
 <div align="center">
     <img src="docs/figures/fig1.png" alt="Minha Imagem" />
-    <p>Fig. 1 . https://massgrave.dev. </p>
+    <p>Fig. 1. https://massgrave.dev. </p>
 </div>
 
 2. Clicar em `Download Windows/Office`
 
 <div align="center">
     <img src="docs/figures/fig2.png" alt="Minha Imagem" />
-    <p>Fig. 2 https://massgrave.dev/#Download__How_to_use_it.</p>
+    <p>Fig. 2. https://massgrave.dev/#Download__How_to_use_it.</p>
 </div>
 
 
@@ -37,7 +37,7 @@ O `Microsoft Office 2016` é uma suíte de aplicativos de produtividade lançada
 
 <div align="center">
     <img src="docs/figures/fig3.png" alt="Minha Imagem" />
-    <p>Fig. 3 https://massgrave.dev/genuine-installation-media.html#Verify_Authenticity_Of_Files.</p>
+    <p>Fig. 3. https://massgrave.dev/genuine-installation-media.html#Verify_Authenticity_Of_Files.</p>
 </div>
 
 
@@ -45,7 +45,7 @@ O `Microsoft Office 2016` é uma suíte de aplicativos de produtividade lançada
 
 <div align="center">
     <img src="docs/figures/fig4.png" alt="Minha Imagem" />
-    <p>Fig. 4 `Office MSI VL Download`.</p>
+    <p>Fig. 4. `Office MSI VL Download`.</p>
 </div>
 
 
@@ -53,7 +53,7 @@ O `Microsoft Office 2016` é uma suíte de aplicativos de produtividade lançada
 
 <div align="center">
     <img src="docs/figures/fig5.png" alt="Minha Imagem" />
-    <p>Fig. 5 `Office 2016 Pro Plus`.</p>
+    <p>Fig. 5. `Office 2016 Pro Plus`.</p>
 </div>
 
 
@@ -61,7 +61,7 @@ O `Microsoft Office 2016` é uma suíte de aplicativos de produtividade lançada
 
 <div align="center">
     <img src="docs/figures/fig6.png" alt="Minha Imagem" />
-    <p>Fig. 6 `SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.ISO`.</p>
+    <p>Fig. 6. `SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.ISO`.</p>
 </div>
 
 7. Salvar o arquivo em um pasta.
@@ -95,7 +95,7 @@ Gerenciar versões do `Wine` com `x86` versão `3.4` instalada
 
 <div align="center">
     <img src="docs/figures/fig14.png" alt="Minha Imagem" />
-    <p>Fig. 14. PlayOnLinux wine versions manager.</p>
+    <p>Fig. 7. PlayOnLinux wine versions manager.</p>
 </div>
 
 2. Se o `Wine x86` versão `3.4` não aparecer em `Installed Wine versions`, selecione-a na janela
@@ -110,7 +110,7 @@ instalação do `Windows` de `32 bits`
 
 <div align="center">
     <img src="docs/figures/fig15.png" alt="Minha Imagem" />
-    <p>Fig. 15. PlayOnLinux Wizard .</p>
+    <p>Fig. 8. PlayOnLinux Wizard .</p>
 </div>
 
 5. Selecione `Wine` versão `3.4` e pressione `Next`.
@@ -133,7 +133,7 @@ selecionar `msxml6e` clique em `Install`.
 
 <div align="center">
     <img src="docs/figures/fig16.png" alt="Minha Imagem" />
-    <p>Fig. 16. PLayOnLinux configuration .</p>
+    <p>Fig. 9. PLayOnLinux configuration .</p>
 </div>
 
 2. **Repita a etapa acima para instalar o(s) componente(s)**: o prefixo ideal deve ter:
@@ -171,7 +171,7 @@ Ao invés de instalar os componentes pelo `PlayOnLinux (POL)`, você pode instal
 
 <div align="center">
     <img src="docs/figures/fig17.png" alt="Minha Imagem" />
-    <p>Fig. 17. Wine Configuration - Edit override.</p>
+    <p>Fig. 10. Wine Configuration - Edit override.</p>
 </div>
 
 3. Na tela de configuração do `Wine`, clique na aba `Applications` e certifique-se de que
@@ -195,7 +195,7 @@ com um valor de `0`.
 
 <div align="center">
     <img src="docs/figures/fig18.png" alt="Minha Imagem" />
-    <p>Fig. 18. Registry Editor .</p>
+    <p>Fig. 11. Registry Editor .</p>
 </div>
 
 8. Feche o `Registry Editor` e retorne à tela Configuração do `PlayOnLinux (POL)`.
@@ -333,7 +333,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 
 <div align="center">
     <img src="docs/figures/fig7.png" alt="Minha Imagem" />
-    <p>Fig. 7 `Install`.</p>
+    <p>Fig. 12. `Install a program`.</p>
 </div>
 
 
@@ -341,15 +341,15 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 
 <div align="center">
     <img src="docs/figures/fig8.png" alt="Minha Imagem" />
-    <p>Fig. 8 `Search`.</p>
+    <p>Fig. 13. `Search`.</p>
 </div>
 
 
-12. Digitar `Microsoft Office 2016`:
+12. Digitar `Microsoft Office 2016 (method B)`:
 
 <div align="center">
     <img src="docs/figures/fig9.png" alt="Minha Imagem" />
-    <p>Fig. 9 `Microsoft Office 2016`.</p>
+    <p>Fig. 14. `Microsoft Office 2016`.</p>
 </div>
 
 
@@ -357,7 +357,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 
 <div align="center">
     <img src="docs/figures/fig10.png" alt="Minha Imagem" />
-    <p>Fig. 10 `Microsoft Office 2016 (method B)`.</p>
+    <p>Fig. 15. `Microsoft Office 2016 (method B)`.</p>
 </div>
 
 
@@ -366,15 +366,39 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 
 <div align="center">
     <img src="docs/figures/fig11.png" alt="Minha Imagem" />
-    <p>Fig. 11 `Install`.</p>
+    <p>Fig. 16. `Install`.</p>
 </div>
 
 
-15. Seguir com as instruções do arquivo de instalação executável`.exe`
+15. Clicar em `Next`:
+
+<div align="center">
+    <img src="docs/figures/playonlinux_during_a_playonlinux_installation.png" alt="Minha Imagem" />
+    <p>Fig. 17. `PlayOnLinux - During a PlayOnLinux Installation`.</p>
+</div>
+
+
+16. Clicar em `Next`:
+
+<div align="center">
+    <img src="docs/figures/playonlinux_is_not_related_to_winehq.png" alt="Minha Imagem" />
+    <p>Fig. 18. `PlayOnLinux - PlayOnLinux is not related to WineHQ`.</p>
+</div>
+
+
+17. Clicar em `Next`:
+
+<div align="center">
+    <img src="docs/figures/playonlinux_the_wizard_will_help_you_install_microsoft_office_2016_on_your_computer.png" alt="Minha Imagem" />
+    <p>Fig. 19. `PlayOnLinux - Welcome to PlayOnLinux Installation Wizard`.</p>
+</div>
+
+
+18. Seguir com as instruções do arquivo de instalação executável`.exe`
 
 <div align="center">
     <img src="docs/figures/fig12.png" alt="Minha Imagem" />
-    <p>Fig. 12 Instalador do `Microsoft Office 2016`.</p>
+    <p>Fig. 20. Instalador do `Microsoft Office 2016`.</p>
 </div>
 
 
