@@ -82,6 +82,8 @@ Para atualizar o `playonlinux` no `Linux Ubuntu`, você pode seguir os passos ab
 
 ## 4. Configurar o `PlayOnLinux (POL)` [5]
 
+### 4.1 Passos iniciais
+
 **A considerar :** `Wine x86` versão `4.15` é mais estável que `3.4` (abaixo) ou `3.14` (postagem
 do `GlasierXplor` no `POL` Fórum). Ou seja, ele não trava aleatoriamente. A ressalva é que haverá
 alguns problemas com as imagens, mas deverá funcionar bem 97% das vezes. O `Wine 4.15` requer a 
@@ -120,7 +122,13 @@ criação. Selecione para instalar o `Mono` se o `POL` solicitar.
 configuração do `PlayOnLinux (POL)`. Certifique-se de que a unidade recém-criada (por exemplo
 `wine34office2016pp`) esteja selecionada na janela esquerda.
 
-8. Clique na guia `Install components` na parte superior. Em seguida, role para baixo para
+### 4.2 Instalar componentes
+
+#### 4.2.1 Instalar componentes pelo `PlayOnLinux (POL)`
+
+Depois de executar os passos da Seção anterior, execute:
+
+1. Clique na guia `Install components` na parte superior. Em seguida, role para baixo para
 selecionar `msxml6e` clique em `Install`.
 
 <div align="center">
@@ -128,7 +136,7 @@ selecionar `msxml6e` clique em `Install`.
     <p>Fig. 16 .</p>
 </div>
 
-9. **Repita a etapa acima para instalar o(s) componente(s)**: o prefixo ideal deve ter:
+2. **Repita a etapa acima para instalar o(s) componente(s)**: o prefixo ideal deve ter:
 
     - `dotnet40`
 
@@ -140,19 +148,25 @@ selecionar `msxml6e` clique em `Install`.
 
     - `corefonts`
 
-    9.1 Você pode instalar tudo de uma vez manualmente:
+#### 4.2.2 Instalar os componentes pelo `Terminal Emulator` (recomendado)
+
+Ao invés de instalar os componentes pelo `PlayOnLinux (POL)`, você pode instalar pelo `Terminal Emulator`, como segue:
+
+1. Você pode instalar tudo de uma vez manualmente:
 
     ```bash
     WINEPREFIX=~/.PlayOnLinux/wineprefix/wine34office2016pp winetricks dotnet40 msxml6 riched20 vcrun2013 corefonts
     ```
 
-    Perceba que, se você instalar o ambiente com outra versão do `wine`, você terá que alterar o
+    **ATENÇÃO**: Perceba que, se você instalar o ambiente com outra versão do `wine`, você terá que alterar o
     nome de `wine34office2016pp` conforme o nome que você criou, por exemplo, para a versão do
     `wine 3.14` pode ser `wine314office2016pp`.
 
-10. Selecione a guia `Wine` na tela Configuração `PlayOnLinux (POL)` e clique em `Configure Wine`.
+### 4.3 Passos finais
 
-11. Assim que a tela Configuração do `Wine` aparecer, clique na guia `Libraries`. Clique em
+1. Selecione a guia `Wine` na tela Configuração `PlayOnLinux (POL)` e clique em `Configure Wine`.
+
+2. Assim que a tela Configuração do `Wine` aparecer, clique na guia `Libraries`. Clique em
 `Edit...` para alterar `msxml6` e `riched20` para `(native, builtin)` ou `Native then Builtin`.
 
 <div align="center">
@@ -160,18 +174,18 @@ selecionar `msxml6e` clique em `Install`.
     <p>Fig. 17 .</p>
 </div>
 
-12. Na tela de configuração do Wine, clique na aba `Applications` e certifique-se de que
+3. Na tela de configuração do Wine, clique na aba `Applications` e certifique-se de que
 `Windows 7` esteja selecionada como a versão do Windows. Saia para a tela de configuração do
 `PlayOnLinux (POL)`.
 
-13. Selecione a guia `Wine` na tela Configuração `PlayOnLinux (POL)` e clique em `Registry Editor`
+4. Selecione a guia `Wine` na tela Configuração `PlayOnLinux (POL)` e clique em `Registry Editor`
 para abrir o Editor do Registro.
 
-14. Selecione para `HKEY_CURRENT_USER-> Software-> Wine`
+5. Selecione para `HKEY_CURRENT_USER-> Software-> Wine`
 
-15. Clique `Edit-> New-> Key` e nomeie esta chave `Direct2D`.
+6. Clique `Edit-> New-> Key` e nomeie esta chave `Direct2D`.
 
-16. Selecione `Direct2D` e então `Edit-> New-> DWORD Value` e nomeie para `max_version_factory`
+7. Selecione `Direct2D` e então `Edit-> New-> DWORD Value` e nomeie para `max_version_factory`
 com um valor de `0`.
 
 <div align="center">
@@ -179,7 +193,7 @@ com um valor de `0`.
     <p>Fig. 18 .</p>
 </div>
 
-17 Feche o `Registry Editor` e retorne à tela Configuração do `PlayOnLinux (POL)`.
+8. Feche o `Registry Editor` e retorne à tela Configuração do `PlayOnLinux (POL)`.
 
 
 ## 5. Configurar/Instalar/Usar o `Microsoft Office 2016` no `Linux Ubuntu` (caso ainda não esteja instalado) [1]
