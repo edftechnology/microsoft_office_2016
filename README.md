@@ -301,8 +301,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
     8.1  **Instalar dependências necessárias**: Primeiro, instale as dependências necessárias para compilar o `wxPython`:
 
     ```bash
-    sudo apt update
-    sudo apt install build-essential libgtk-3-dev libjpeg-dev libtiff-dev libpng-dev libwxgtk3.0-gtk3-dev
+    sudo apt install build-essential libgtk-3-dev libjpeg-dev libtiff-dev libpng-dev libwxgtk3.0-gtk3-dev -y
     ```
 
     8.2 **Tentar instalar `wxPython` novamente**: Agora, tente instalar o `wxPython` novamente usando `pip`: 
@@ -320,7 +319,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
     8.4 **Instalar o módulo `natsort`**: Use o pip para instalar o módulo `natsort`:
     
     ```bash
-    python3.11 -m pip install natsort
+    python3 -m pip install natsort
     ```
 
 9. Para abrir o `playonlinux`, digitar o comando:
@@ -330,7 +329,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
     ```
 
 
-10. Clicar em `Install`:
+10. Clicar em `Install a program`:
 
 <div align="center">
     <img src="docs/figures/fig7.png" alt="Minha Imagem" />
