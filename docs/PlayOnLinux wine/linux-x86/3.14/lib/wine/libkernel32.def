@@ -1,0 +1,1265 @@
+; File generated automatically from dlls/kernel32/kernel32.spec; do not edit!
+
+LIBRARY kernel32.dll
+
+EXPORTS
+  VxDCall0@0=krnl386.exe16.VxDCall0 @1 NONAME PRIVATE
+  VxDCall1@0=krnl386.exe16.VxDCall1 @2 NONAME PRIVATE
+  VxDCall2@0=krnl386.exe16.VxDCall2 @3 NONAME PRIVATE
+  VxDCall3@0=krnl386.exe16.VxDCall3 @4 NONAME PRIVATE
+  VxDCall4@0=krnl386.exe16.VxDCall4 @5 NONAME PRIVATE
+  VxDCall5@0=krnl386.exe16.VxDCall5 @6 NONAME PRIVATE
+  VxDCall6@0=krnl386.exe16.VxDCall6 @7 NONAME PRIVATE
+  VxDCall7@0=krnl386.exe16.VxDCall7 @8 NONAME PRIVATE
+  VxDCall8@0=krnl386.exe16.VxDCall8 @9 NONAME PRIVATE
+  k32CharToOemA@8=krnl386.exe16.k32CharToOemA @10 NONAME PRIVATE
+  k32CharToOemBuffA@12=krnl386.exe16.k32CharToOemBuffA @11 NONAME PRIVATE
+  k32OemToCharA@8=krnl386.exe16.k32OemToCharA @12 NONAME PRIVATE
+  k32OemToCharBuffA@12=krnl386.exe16.k32OemToCharBuffA @13 NONAME PRIVATE
+  k32LoadStringA@16=krnl386.exe16.k32LoadStringA @14 NONAME PRIVATE
+  k32wsprintfA=krnl386.exe16.k32wsprintfA @15 NONAME PRIVATE
+  k32wvsprintfA@12=krnl386.exe16.k32wvsprintfA @16 NONAME PRIVATE
+  CommonUnimpStub@0=krnl386.exe16.CommonUnimpStub @17 NONAME PRIVATE
+  GetProcessDword@8=krnl386.exe16.GetProcessDword @18 NONAME PRIVATE
+  DosFileHandleToWin32Handle@4=krnl386.exe16.DosFileHandleToWin32Handle @20 NONAME PRIVATE
+  Win32HandleToDosFileHandle@4=krnl386.exe16.Win32HandleToDosFileHandle @21 NONAME PRIVATE
+  DisposeLZ32Handle@4=krnl386.exe16.DisposeLZ32Handle @22 NONAME PRIVATE
+  GlobalAlloc16@8=krnl386.exe16.GlobalAlloc16 @24 NONAME PRIVATE
+  GlobalLock16@4=krnl386.exe16.GlobalLock16 @25 NONAME PRIVATE
+  GlobalUnlock16@4=krnl386.exe16.GlobalUnlock16 @26 NONAME PRIVATE
+  GlobalFix16@4=krnl386.exe16.GlobalFix16 @27 NONAME PRIVATE
+  GlobalUnfix16@4=krnl386.exe16.GlobalUnfix16 @28 NONAME PRIVATE
+  GlobalWire16@4=krnl386.exe16.GlobalWire16 @29 NONAME PRIVATE
+  GlobalUnWire16@4=krnl386.exe16.GlobalUnWire16 @30 NONAME PRIVATE
+  GlobalFree16@4=krnl386.exe16.GlobalFree16 @31 NONAME PRIVATE
+  GlobalSize16@4=krnl386.exe16.GlobalSize16 @32 NONAME PRIVATE
+  HouseCleanLogicallyDeadHandles@0=krnl386.exe16.HouseCleanLogicallyDeadHandles @33 NONAME PRIVATE
+  GetWin16DOSEnv@0=krnl386.exe16.GetWin16DOSEnv @34 NONAME PRIVATE
+  LoadLibrary16@4=krnl386.exe16.LoadLibrary16 @35 NONAME PRIVATE
+  FreeLibrary16@4=krnl386.exe16.FreeLibrary16 @36 NONAME PRIVATE
+  GetProcAddress16@8=krnl386.exe16.GetProcAddress16 @37 NONAME PRIVATE
+  AllocMappedBuffer@0=krnl386.exe16.AllocMappedBuffer @38 NONAME PRIVATE
+  FreeMappedBuffer@0=krnl386.exe16.FreeMappedBuffer @39 NONAME PRIVATE
+  OT_32ThkLSF@0=krnl386.exe16.OT_32ThkLSF @40 NONAME PRIVATE
+  ThunkInitLSF@20=krnl386.exe16.ThunkInitLSF @41 NONAME PRIVATE
+  LogApiThkLSF@4=krnl386.exe16.LogApiThkLSF @42 NONAME PRIVATE
+  ThunkInitLS@20=krnl386.exe16.ThunkInitLS @43 NONAME PRIVATE
+  LogApiThkSL@4=krnl386.exe16.LogApiThkSL @44 NONAME PRIVATE
+  Common32ThkLS@0=krnl386.exe16.Common32ThkLS @45 NONAME PRIVATE
+  ThunkInitSL@20=krnl386.exe16.ThunkInitSL @46 NONAME PRIVATE
+  LogCBThkSL@4=krnl386.exe16.LogCBThkSL @47 NONAME PRIVATE
+  ReleaseThunkLock@4=krnl386.exe16.ReleaseThunkLock @48 NONAME PRIVATE
+  RestoreThunkLock@4=krnl386.exe16.RestoreThunkLock @49 NONAME PRIVATE
+  W32S_BackTo32@0=krnl386.exe16.W32S_BackTo32 @51 NONAME PRIVATE
+  GetThunkBuff@0=krnl386.exe16.GetThunkBuff @52 NONAME PRIVATE
+  GetThunkStuff@8=krnl386.exe16.GetThunkStuff @53 NONAME PRIVATE
+  K32WOWCallback16@8=krnl386.exe16.K32WOWCallback16 @54 NONAME PRIVATE
+  K32WOWCallback16Ex@20=krnl386.exe16.K32WOWCallback16Ex @55 NONAME PRIVATE
+  K32WOWGetVDMPointer@12=krnl386.exe16.K32WOWGetVDMPointer @56 NONAME PRIVATE
+  K32WOWHandle32@8=krnl386.exe16.K32WOWHandle32 @57 NONAME PRIVATE
+  K32WOWHandle16@8=krnl386.exe16.K32WOWHandle16 @58 NONAME PRIVATE
+  K32WOWGlobalAlloc16@8=krnl386.exe16.K32WOWGlobalAlloc16 @59 NONAME PRIVATE
+  K32WOWGlobalLock16@4=krnl386.exe16.K32WOWGlobalLock16 @60 NONAME PRIVATE
+  K32WOWGlobalUnlock16@4=krnl386.exe16.K32WOWGlobalUnlock16 @61 NONAME PRIVATE
+  K32WOWGlobalFree16@4=krnl386.exe16.K32WOWGlobalFree16 @62 NONAME PRIVATE
+  K32WOWGlobalAllocLock16@12=krnl386.exe16.K32WOWGlobalAllocLock16 @63 NONAME PRIVATE
+  K32WOWGlobalUnlockFree16@4=krnl386.exe16.K32WOWGlobalUnlockFree16 @64 NONAME PRIVATE
+  K32WOWGlobalLockSize16@8=krnl386.exe16.K32WOWGlobalLockSize16 @65 NONAME PRIVATE
+  K32WOWYield16@0=krnl386.exe16.K32WOWYield16 @66 NONAME PRIVATE
+  K32WOWDirectedYield16@4=krnl386.exe16.K32WOWDirectedYield16 @67 NONAME PRIVATE
+  K32WOWGetVDMPointerFix@12=krnl386.exe16.K32WOWGetVDMPointerFix @68 NONAME PRIVATE
+  K32WOWGetVDMPointerUnfix@4=krnl386.exe16.K32WOWGetVDMPointerUnfix @69 NONAME PRIVATE
+  K32WOWGetDescriptor@8=krnl386.exe16.K32WOWGetDescriptor @70 NONAME PRIVATE
+  K32RtlLargeIntegerAdd@16=ntdll.RtlLargeIntegerAdd @72 NONAME PRIVATE
+  K32RtlEnlargedIntegerMultiply@8=ntdll.RtlEnlargedIntegerMultiply @73 NONAME PRIVATE
+  K32RtlEnlargedUnsignedMultiply@8=ntdll.RtlEnlargedUnsignedMultiply @74 NONAME PRIVATE
+  K32RtlEnlargedUnsignedDivide@16=ntdll.RtlEnlargedUnsignedDivide @75 NONAME PRIVATE
+  K32RtlExtendedLargeIntegerDivide@16=ntdll.RtlExtendedLargeIntegerDivide @76 NONAME PRIVATE
+  K32RtlExtendedMagicDivide@20=ntdll.RtlExtendedMagicDivide @77 NONAME PRIVATE
+  K32RtlExtendedIntegerMultiply@12=ntdll.RtlExtendedIntegerMultiply @78 NONAME PRIVATE
+  K32RtlLargeIntegerShiftLeft@12=ntdll.RtlLargeIntegerShiftLeft @79 NONAME PRIVATE
+  K32RtlLargeIntegerShiftRight@12=ntdll.RtlLargeIntegerShiftRight @80 NONAME PRIVATE
+  K32RtlLargeIntegerArithmeticShift@12=ntdll.RtlLargeIntegerArithmeticShift @81 NONAME PRIVATE
+  K32RtlLargeIntegerNegate@8=ntdll.RtlLargeIntegerNegate @82 NONAME PRIVATE
+  K32RtlLargeIntegerSubtract@16=ntdll.RtlLargeIntegerSubtract @83 NONAME PRIVATE
+  K32RtlConvertLongToLargeInteger@4=ntdll.RtlConvertLongToLargeInteger @84 NONAME PRIVATE
+  K32RtlConvertUlongToLargeInteger@4=ntdll.RtlConvertUlongToLargeInteger @85 NONAME PRIVATE
+  SSOnBigStack@0=krnl386.exe16.SSOnBigStack @87 NONAME PRIVATE
+  SSCall=krnl386.exe16.SSCall @88 NONAME PRIVATE
+  FT_PrologPrime@0=krnl386.exe16.FT_PrologPrime @89 NONAME PRIVATE
+  QT_ThunkPrime@0=krnl386.exe16.QT_ThunkPrime @90 NONAME PRIVATE
+  PK16FNF@4=krnl386.exe16.PK16FNF @91 NONAME PRIVATE
+  GetPK16SysVar@0=krnl386.exe16.GetPK16SysVar @92 NONAME PRIVATE
+  GetpWin16Lock@4=krnl386.exe16.GetpWin16Lock @93 NONAME PRIVATE
+  _CheckNotSysLevel@4=krnl386.exe16._CheckNotSysLevel @94 NONAME PRIVATE
+  _ConfirmSysLevel@4=krnl386.exe16._ConfirmSysLevel @95 NONAME PRIVATE
+  _ConfirmWin16Lock@0=krnl386.exe16._ConfirmWin16Lock @96 NONAME PRIVATE
+  _EnterSysLevel@4=krnl386.exe16._EnterSysLevel @97 NONAME PRIVATE
+  _LeaveSysLevel@4=krnl386.exe16._LeaveSysLevel @98 NONAME PRIVATE
+  AcquireSRWLockExclusive@4=ntdll.RtlAcquireSRWLockExclusive @50
+  AcquireSRWLockShared@4=ntdll.RtlAcquireSRWLockShared @118
+  ActivateActCtx@8 @123
+  AddAtomA@4 @124
+  AddAtomW@4 @125
+  AddConsoleAliasA@12 @126
+  AddConsoleAliasW@12 @127
+  AddDllDirectory@4 @128
+  AddRefActCtx@4 @129
+  AddVectoredContinueHandler@8=ntdll.RtlAddVectoredContinueHandler @130
+  AddVectoredExceptionHandler@8=ntdll.RtlAddVectoredExceptionHandler @131
+  AllocConsole@0 @132
+  AllocSLCallback@8=krnl386.exe16.AllocSLCallback @134 PRIVATE
+  AllocateUserPhysicalPages@12 @135
+  ApplicationRecoveryFinished@4 @136
+  ApplicationRecoveryInProgress@4 @137
+  AreFileApisANSI@0 @138
+  AssignProcessToJobObject@8 @139
+  AttachConsole@4 @140
+  BackupRead@28 @141
+  BackupSeek@24 @142
+  BackupWrite@28 @143
+  BaseFlushAppcompatCache@0 @149
+  Beep@8 @155
+  BeginUpdateResourceA@8 @156
+  BeginUpdateResourceW@8 @157
+  BindIoCompletionCallback@12 @158
+  BuildCommDCBA@8 @159
+  BuildCommDCBAndTimeoutsA@12 @160
+  BuildCommDCBAndTimeoutsW@12 @161
+  BuildCommDCBW@8 @162
+  CallbackMayRunLong@4 @163
+  CallNamedPipeA@28 @164
+  CallNamedPipeW@28 @165
+  CancelIo@4 @167
+  CancelIoEx@8 @168
+  CancelSynchronousIo@4 @169
+  CancelTimerQueueTimer@8 @170
+  CancelWaitableTimer@4 @171
+  ChangeTimerQueueTimer@16 @172
+  CheckNameLegalDOS8Dot3A@20 @173
+  CheckNameLegalDOS8Dot3W@20 @174
+  CheckRemoteDebuggerPresent@8 @175
+  ClearCommBreak@4 @176
+  ClearCommError@12 @177
+  CloseConsoleHandle@4 @178
+  CloseHandle@4 @179
+  CloseProfileUserMapping@0 @180
+  CloseThreadpool@4=ntdll.TpReleasePool @182
+  CloseThreadpoolCleanupGroup@4=ntdll.TpReleaseCleanupGroup @183
+  CloseThreadpoolCleanupGroupMembers@12=ntdll.TpReleaseCleanupGroupMembers @184
+  CloseThreadpoolTimer@4=ntdll.TpReleaseTimer @185
+  CloseThreadpoolWait@4=ntdll.TpReleaseWait @186
+  CloseThreadpoolWork@4=ntdll.TpReleaseWork @187
+  CmdBatNotification@4 @188
+  CommConfigDialogA@12 @189
+  CommConfigDialogW@12 @190
+  CompareFileTime@8 @191
+  CompareStringA@24 @192
+  CompareStringW@24 @193
+  CompareStringEx@36 @194
+  CompareStringOrdinal@20 @195
+  ConnectNamedPipe@8 @196
+  ContinueDebugEvent@12 @199
+  ConvertDefaultLocale@4 @200
+  ConvertFiberToThread@0 @201
+  ConvertThreadToFiber@4 @202
+  ConvertThreadToFiberEx@8 @203
+  ConvertToGlobalHandle@4 @204
+  CopyFileA@12 @205
+  CopyFileExA@24 @206
+  CopyFileExW@24 @207
+  CopyFileW@12 @208
+  CopyLZFile@8=LZCopy@8 @209
+  CreateActCtxA@4 @210
+  CreateActCtxW@4 @211
+  CreateConsoleScreenBuffer@20 @212
+  CreateDirectoryA@8 @213
+  CreateDirectoryExA@12 @214
+  CreateDirectoryExW@12 @215
+  CreateDirectoryW@8 @216
+  CreateEventA@16 @217
+  CreateEventExA@16 @218
+  CreateEventExW@16 @219
+  CreateEventW@16 @220
+  CreateFiber@12 @221
+  CreateFiberEx@20 @222
+  CreateFile2@20 @223
+  CreateFileA@28 @224
+  CreateFileMappingA@24 @225
+  CreateHardLinkTransactedA@16 @226
+  CreateHardLinkTransactedW@16 @227
+  CreateFileMappingW@24 @228
+  CreateFileW@28 @229
+  CreateHardLinkA@12 @230
+  CreateHardLinkW@12 @231
+  CreateIoCompletionPort@16 @232
+  CreateJobObjectA@8 @233
+  CreateJobObjectW@8 @234
+  CreateMailslotA@16 @236
+  CreateMailslotW@16 @237
+  CreateMemoryResourceNotification@4 @238
+  CreateMutexA@12 @239
+  CreateMutexExA@16 @240
+  CreateMutexExW@16 @241
+  CreateMutexW@12 @242
+  CreateNamedPipeA@32 @243
+  CreateNamedPipeW@32 @244
+  CreatePipe@16 @245
+  CreateProcessA@40 @246
+  CreateProcessW@40 @247
+  CreateRemoteThread@28 @248
+  CreateRemoteThreadEx@32 @249
+  CreateSemaphoreA@16 @250
+  CreateSemaphoreExA@24 @251
+  CreateSemaphoreExW@24 @252
+  CreateSemaphoreW@16 @253
+  CreateSocketHandle@0 @254
+  CreateSymbolicLinkA@12 @255
+  CreateSymbolicLinkW@12 @256
+  CreateTapePartition@16 @257
+  CreateThread@24 @258
+  CreateThreadpool@4 @259
+  CreateThreadpoolCleanupGroup@0 @260
+  CreateThreadpoolIo@16 @261
+  CreateThreadpoolTimer@12 @262
+  CreateThreadpoolWait@12 @263
+  CreateThreadpoolWork@12 @264
+  CreateTimerQueue@0 @265
+  CreateTimerQueueTimer@28 @266
+  CreateToolhelp32Snapshot@8 @267
+  CreateWaitableTimerA@12 @269
+  CreateWaitableTimerExA@16 @270
+  CreateWaitableTimerExW@16 @271
+  CreateWaitableTimerW@12 @272
+  DeactivateActCtx@8 @273
+  DebugActiveProcess@4 @274
+  DebugActiveProcessStop@4 @275
+  DebugBreak@0 @276
+  DebugBreakProcess@4 @277
+  DebugSetProcessKillOnExit@4 @278
+  DecodePointer@4=ntdll.RtlDecodePointer @279
+  DecodeSystemPointer@4=ntdll.RtlDecodeSystemPointer @280
+  DefineDosDeviceA@12 @281
+  DefineDosDeviceW@12 @282
+  DelayLoadFailureHook@8 @283
+  DeleteAtom@4 @284
+  DeleteCriticalSection@4=ntdll.RtlDeleteCriticalSection @285
+  DeleteFiber@4 @286
+  DeleteFileA@4 @287
+  DeleteFileW@4 @288
+  DeleteProcThreadAttributeList@4 @289
+  DisassociateCurrentThreadFromCallback@4=ntdll.TpDisassociateCallback @290
+  DeleteTimerQueue@4 @291
+  DeleteTimerQueueEx@8 @292
+  DeleteTimerQueueTimer@12 @293
+  DeleteVolumeMountPointA@4 @294
+  DeleteVolumeMountPointW@4 @295
+  DeviceIoControl@32 @296
+  DisableThreadLibraryCalls@4 @297
+  DisconnectNamedPipe@4 @298
+  DnsHostnameToComputerNameA@12 @299
+  DnsHostnameToComputerNameW@12 @300
+  DosDateTimeToFileTime@12 @301
+  DuplicateConsoleHandle@16 @302
+  DuplicateHandle@28 @303
+  EncodePointer@4=ntdll.RtlEncodePointer @304
+  EncodeSystemPointer@4=ntdll.RtlEncodeSystemPointer @305
+  EndUpdateResourceA@8 @306
+  EndUpdateResourceW@8 @307
+  EnterCriticalSection@4=ntdll.RtlEnterCriticalSection @308
+  EnumCalendarInfoA@16 @309
+  EnumCalendarInfoExA@16 @310
+  EnumCalendarInfoExEx@24 @311
+  EnumCalendarInfoExW@16 @312
+  EnumCalendarInfoW@16 @313
+  EnumDateFormatsA@12 @314
+  EnumDateFormatsExA@12 @315
+  EnumDateFormatsExEx@16 @316
+  EnumDateFormatsExW@12 @317
+  EnumDateFormatsW@12 @318
+  EnumLanguageGroupLocalesA@16 @319
+  EnumLanguageGroupLocalesW@16 @320
+  EnumResourceLanguagesA@20 @321
+  EnumResourceLanguagesExA@28 @322
+  EnumResourceLanguagesExW@28 @323
+  EnumResourceLanguagesW@20 @324
+  EnumResourceNamesA@16 @325
+  EnumResourceNamesW@16 @326
+  EnumResourceTypesA@12 @327
+  EnumResourceTypesW@12 @328
+  EnumSystemCodePagesA@8 @329
+  EnumSystemCodePagesW@8 @330
+  EnumSystemGeoID@12 @331
+  EnumSystemLanguageGroupsA@12 @332
+  EnumSystemLanguageGroupsW@12 @333
+  EnumSystemLocalesA@8 @334
+  EnumSystemLocalesEx@16 @335
+  EnumSystemLocalesW@8 @336
+  EnumTimeFormatsA@12 @337
+  EnumTimeFormatsEx@16 @338
+  EnumTimeFormatsW@12 @339
+  EnumUILanguagesA@12 @340
+  EnumUILanguagesW@12 @341
+  EraseTape@12 @342
+  EscapeCommFunction@8 @343
+  ExitProcess@4 @344
+  ExitThread@4 @345
+  ExpandEnvironmentStringsA@12 @347
+  ExpandEnvironmentStringsW@12 @348
+  ExpungeConsoleCommandHistoryA@4 @349
+  ExpungeConsoleCommandHistoryW@4 @350
+  FT_Exit0@0=krnl386.exe16.FT_Exit0 @352 PRIVATE
+  FT_Exit12@0=krnl386.exe16.FT_Exit12 @353 PRIVATE
+  FT_Exit16@0=krnl386.exe16.FT_Exit16 @354 PRIVATE
+  FT_Exit20@0=krnl386.exe16.FT_Exit20 @355 PRIVATE
+  FT_Exit24@0=krnl386.exe16.FT_Exit24 @356 PRIVATE
+  FT_Exit28@0=krnl386.exe16.FT_Exit28 @357 PRIVATE
+  FT_Exit32@0=krnl386.exe16.FT_Exit32 @358 PRIVATE
+  FT_Exit36@0=krnl386.exe16.FT_Exit36 @359 PRIVATE
+  FT_Exit40@0=krnl386.exe16.FT_Exit40 @360 PRIVATE
+  FT_Exit44@0=krnl386.exe16.FT_Exit44 @361 PRIVATE
+  FT_Exit48@0=krnl386.exe16.FT_Exit48 @362 PRIVATE
+  FT_Exit4@0=krnl386.exe16.FT_Exit4 @363 PRIVATE
+  FT_Exit52@0=krnl386.exe16.FT_Exit52 @364 PRIVATE
+  FT_Exit56@0=krnl386.exe16.FT_Exit56 @365 PRIVATE
+  FT_Exit8@0=krnl386.exe16.FT_Exit8 @366 PRIVATE
+  FT_Prolog@0=krnl386.exe16.FT_Prolog @367 PRIVATE
+  FT_Thunk@0=krnl386.exe16.FT_Thunk @368 PRIVATE
+  FatalAppExitA@8 @369
+  FatalAppExitW@8 @370
+  FatalExit@4 @371
+  FileTimeToDosDateTime@12 @372
+  FileTimeToLocalFileTime@8 @373
+  FileTimeToSystemTime@8 @374
+  FillConsoleOutputAttribute@20 @375
+  FillConsoleOutputCharacterA@20 @376
+  FillConsoleOutputCharacterW@20 @377
+  FindActCtxSectionGuid@20 @378
+  FindActCtxSectionStringA@20 @379
+  FindActCtxSectionStringW@20 @380
+  FindAtomA@4 @381
+  FindAtomW@4 @382
+  FindClose@4 @383
+  FindCloseChangeNotification@4 @384
+  FindFirstChangeNotificationA@12 @385
+  FindFirstChangeNotificationW@12 @386
+  FindFirstFileA@8 @387
+  FindFirstFileExA@24 @388
+  FindFirstFileExW@24 @389
+  FindFirstFileW@8 @390
+  FindFirstVolumeA@8 @391
+  FindFirstVolumeMountPointA@12 @392
+  FindFirstVolumeMountPointW@12 @393
+  FindFirstVolumeW@8 @394
+  FindNextChangeNotification@4 @395
+  FindNextFileA@8 @396
+  FindNextFileW@8 @397
+  FindNextVolumeA@12 @398
+  FindNextVolumeW@12 @401
+  FindNLSStringEx@40 @402
+  FindResourceA@12 @403
+  FindResourceExA@16 @404
+  FindResourceExW@16 @405
+  FindResourceW@12 @406
+  FindVolumeClose@4 @407
+  FindVolumeMountPointClose@4 @408
+  FlsAlloc@4 @409
+  FlsFree@4 @410
+  FlsGetValue@4 @411
+  FlsSetValue@8 @412
+  FlushConsoleInputBuffer@4 @413
+  FlushFileBuffers@4 @414
+  FlushInstructionCache@12 @415
+  FlushProcessWriteBuffers@0 @416
+  FlushViewOfFile@8 @417
+  FoldStringA@20 @418
+  FoldStringW@20 @419
+  FormatMessageA@28 @420
+  FormatMessageW@28 @421
+  FreeConsole@0 @422
+  FreeEnvironmentStringsA@4 @423
+  FreeEnvironmentStringsW@4 @424
+  FreeLibrary@4 @426
+  FreeLibraryAndExitThread@8 @427
+  FreeLibraryWhenCallbackReturns@8=ntdll.TpCallbackUnloadDllOnCompletion @428
+  FreeResource@4 @429
+  FreeSLCallback@4=krnl386.exe16.FreeSLCallback @430 PRIVATE
+  FreeUserPhysicalPages@12 @431
+  GenerateConsoleCtrlEvent@8 @433
+  Get16DLLAddress@8=krnl386.exe16.Get16DLLAddress @434 PRIVATE
+  GetACP@0 @435
+  GetActiveProcessorCount@4 @436
+  GetActiveProcessorGroupCount@0 @437
+  GetAtomNameA@12 @438
+  GetAtomNameW@12 @439
+  GetBinaryType@8=GetBinaryTypeA@8 @440
+  GetBinaryTypeA@8 @441
+  GetBinaryTypeW@8 @442
+  GetCPInfo@8 @443
+  GetCPInfoExA@12 @444
+  GetCPInfoExW@12 @445
+  GetCalendarInfoA@24 @446
+  GetCalendarInfoW@24 @447
+  GetCalendarInfoEx@28 @448
+  GetCommConfig@12 @449
+  GetCommMask@8 @450
+  GetCommModemStatus@8 @451
+  GetCommProperties@8 @452
+  GetCommState@8 @453
+  GetCommTimeouts@8 @454
+  GetCommandLineA@0 @455
+  GetCommandLineW@0 @456
+  GetCompressedFileSizeA@8 @457
+  GetCompressedFileSizeW@8 @458
+  GetComputerNameA@8 @459
+  GetComputerNameExA@12 @460
+  GetComputerNameExW@12 @461
+  GetComputerNameW@8 @462
+  GetConsoleAliasExesLengthA@0 @465
+  GetConsoleAliasExesLengthW@0 @466
+  GetConsoleAliasW@16 @468
+  GetConsoleAliasesLengthA@4 @470
+  GetConsoleAliasesLengthW@4 @471
+  GetConsoleCP@0 @473
+  GetConsoleCommandHistoryA@12 @475
+  GetConsoleCommandHistoryLengthA@4 @476
+  GetConsoleCommandHistoryLengthW@4 @477
+  GetConsoleCommandHistoryW@12 @478
+  GetConsoleCursorInfo@8 @479
+  GetConsoleDisplayMode@4 @481
+  GetConsoleFontInfo@16 @482
+  GetConsoleFontSize@8 @483
+  GetConsoleInputExeNameA@8 @485
+  GetConsoleInputExeNameW@8 @486
+  GetConsoleInputWaitHandle@0 @487
+  GetConsoleKeyboardLayoutNameA@4 @488
+  GetConsoleKeyboardLayoutNameW@4 @489
+  GetConsoleMode@8 @490
+  GetConsoleOutputCP@0 @492
+  GetConsoleProcessList@8 @493
+  GetConsoleScreenBufferInfo@8 @494
+  GetConsoleScreenBufferInfoEx@8 @495
+  GetConsoleTitleA@8 @496
+  GetConsoleTitleW@8 @497
+  GetConsoleWindow@0 @498
+  GetCurrencyFormatA@24 @499
+  GetCurrencyFormatEx@24 @500
+  GetCurrencyFormatW@24 @501
+  GetCurrentActCtx@4 @502
+  GetCurrentConsoleFont@12 @503
+  GetCurrentDirectoryA@8 @504
+  GetCurrentDirectoryW@8 @505
+  GetCurrentPackageFamilyName@8 @506
+  GetCurrentPackageFullName@8 @507
+  GetCurrentPackageId@8 @508
+  GetCurrentProcess@0 @509
+  GetCurrentProcessId@0 @510
+  GetCurrentProcessorNumber@0=ntdll.NtGetCurrentProcessorNumber @511
+  GetCurrentProcessorNumberEx@4=ntdll.RtlGetCurrentProcessorNumberEx @512
+  GetCurrentThread@0 @513
+  GetCurrentThreadId@0 @514
+  GetDateFormatA@24 @515
+  GetDateFormatEx@28 @516
+  GetDateFormatW@24 @517
+  GetDaylightFlag@0 @518
+  GetDefaultCommConfigA@12 @519
+  GetDefaultCommConfigW@12 @520
+  GetDevicePowerState@8 @522
+  GetDiskFreeSpaceA@20 @523
+  GetDiskFreeSpaceExA@16 @524
+  GetDiskFreeSpaceExW@16 @525
+  GetDiskFreeSpaceW@20 @526
+  GetDllDirectoryA@8 @527
+  GetDllDirectoryW@8 @528
+  GetDriveTypeA@4 @529
+  GetDriveTypeW@4 @530
+  GetDynamicTimeZoneInformation@4 @531
+  GetDynamicTimeZoneInformationEffectiveYears@12 @532
+  GetEnabledXStateFeatures@0 @533
+  GetEnvironmentStrings@0=GetEnvironmentStringsA@0 @534
+  GetEnvironmentStringsA@0 @535
+  GetEnvironmentStringsW@0 @536
+  GetEnvironmentVariableA@12 @537
+  GetEnvironmentVariableW@12 @538
+  GetErrorMode@0 @539
+  GetExitCodeProcess@8 @540
+  GetExitCodeThread@8 @541
+  GetExpandedNameA@8 @542
+  GetExpandedNameW@8 @543
+  GetFileAttributesA@4 @544
+  GetFileAttributesExA@12 @545
+  GetFileAttributesExW@12 @546
+  GetFileAttributesW@4 @547
+  GetFileInformationByHandle@8 @548
+  GetFileInformationByHandleEx@16 @549
+  GetFileMUIInfo@16 @550
+  GetFileMUIPath@28 @551
+  GetFileSize@8 @552
+  GetFileSizeEx@8 @553
+  GetFileTime@16 @554
+  GetFileType@4 @555
+  GetFinalPathNameByHandleA@16 @556
+  GetFinalPathNameByHandleW@16 @557
+  GetFirmwareEnvironmentVariableA@16 @558
+  GetFirmwareEnvironmentVariableW@16 @559
+  GetFullPathNameA@16 @560
+  GetFullPathNameW@16 @561
+  GetGeoInfoA@20 @562
+  GetGeoInfoW@20 @563
+  GetHandleContext@4 @564
+  GetHandleInformation@8 @565
+  GetLargePageMinimum@0 @568
+  GetLargestConsoleWindowSize@4 @569
+  GetLastError@0 @570
+  GetLocalTime@4 @572
+  GetLocaleInfoA@16 @573
+  GetLocaleInfoW@16 @574
+  GetLocaleInfoEx@16 @575
+  GetLogicalDriveStringsA@8 @576
+  GetLogicalDriveStringsW@8 @577
+  GetLogicalDrives@0 @578
+  GetLogicalProcessorInformation@8 @579
+  GetLogicalProcessorInformationEx@12 @580
+  GetLongPathNameA@12 @581
+  GetLongPathNameW@12 @582
+  GetMailslotInfo@20 @583
+  GetModuleFileNameA@12 @584
+  GetModuleFileNameW@12 @585
+  GetModuleHandleA@4 @586
+  GetModuleHandleExA@12 @587
+  GetModuleHandleExW@12 @588
+  GetModuleHandleW@4 @589
+  GetNamedPipeClientProcessId@8 @590
+  GetNamedPipeClientSessionId@8 @591
+  GetNamedPipeHandleStateA@28 @592
+  GetNamedPipeHandleStateW@28 @593
+  GetNamedPipeInfo@20 @594
+  GetNamedPipeServerProcessId@8 @595
+  GetNamedPipeServerSessionId@8 @596
+  GetNativeSystemInfo@4 @597
+  GetNumaAvailableMemoryNode@8 @600
+  GetNumaHighestNodeNumber@4 @601
+  GetNumaNodeProcessorMask@8 @602
+  GetNumaNodeProcessorMaskEx@8 @603
+  GetNumaProcessorNode@8 @604
+  GetNumberFormatA@24 @605
+  GetNumberFormatEx@24 @606
+  GetNumberFormatW@24 @607
+  GetNumberOfConsoleFonts@0 @608
+  GetNumberOfConsoleInputEvents@8 @609
+  GetNumberOfConsoleMouseButtons@4 @610
+  GetOEMCP@0 @611
+  GetOverlappedResult@16 @612
+  GetUserPreferredUILanguages@16 @613
+  GetPackageFullName@12 @614
+  GetPhysicallyInstalledSystemMemory@4 @615
+  GetPriorityClass@4 @616
+  GetPrivateProfileIntA@16 @617
+  GetPrivateProfileIntW@16 @618
+  GetPrivateProfileSectionA@16 @619
+  GetPrivateProfileSectionNamesA@12 @620
+  GetPrivateProfileSectionNamesW@12 @621
+  GetPrivateProfileSectionW@16 @622
+  GetPrivateProfileStringA@24 @623
+  GetPrivateProfileStringW@24 @624
+  GetPrivateProfileStructA@20 @625
+  GetPrivateProfileStructW@20 @626
+  GetProcAddress@8 @627
+  GetProcessAffinityMask@12 @628
+  GetProcessDEPPolicy@12 @629
+  GetProcessFlags@4 @630
+  GetProcessHandleCount@8 @631
+  GetProcessHeap@0 @632
+  GetProcessHeaps@8 @633
+  GetProcessId@4 @634
+  GetProcessIdOfThread@4 @635
+  GetProcessIoCounters@8 @636
+  GetProcessPriorityBoost@8 @637
+  GetProcessShutdownParameters@8 @638
+  GetProcessTimes@20 @639
+  GetProcessVersion@4 @640
+  GetProcessWorkingSetSize@12 @641
+  GetProcessWorkingSetSizeEx@16 @642
+  GetProductInfo@20 @643
+  GetProfileIntA@12 @645
+  GetProfileIntW@12 @646
+  GetProfileSectionA@12 @647
+  GetProfileSectionW@12 @648
+  GetProfileStringA@20 @649
+  GetProfileStringW@20 @650
+  GetQueuedCompletionStatus@20 @651
+  GetShortPathNameA@12 @654
+  GetShortPathNameW@12 @655
+  GetStartupInfoA@4 @656
+  GetStartupInfoW@4 @657
+  GetStdHandle@4 @658
+  GetStringTypeA@20 @659
+  GetStringTypeExA@20 @660
+  GetStringTypeExW@20 @661
+  GetStringTypeW@16 @662
+  GetSystemFileCacheSize@12 @663
+  GetSystemDefaultLCID@0 @664
+  GetSystemDefaultLangID@0 @665
+  GetSystemDefaultLocaleName@8 @666
+  GetSystemDefaultUILanguage@0 @667
+  GetSystemDEPPolicy@0 @668
+  GetSystemDirectoryA@8 @669
+  GetSystemDirectoryW@8 @670
+  GetSystemFirmwareTable@16 @671
+  GetSystemInfo@4 @672
+  GetSystemPowerStatus@4 @673
+  GetSystemPreferredUILanguages@16 @674
+  GetSystemRegistryQuota@8 @675
+  GetSystemTime@4 @676
+  GetSystemTimeAdjustment@12 @677
+  GetSystemTimeAsFileTime@4 @678
+  GetSystemTimePreciseAsFileTime@4 @679
+  GetSystemTimes@12 @680
+  GetSystemWindowsDirectoryA@8 @681
+  GetSystemWindowsDirectoryW@8 @682
+  GetSystemWow64DirectoryA@8 @683
+  GetSystemWow64DirectoryW@8 @684
+  GetTapeParameters@16 @685
+  GetTapePosition@20 @686
+  GetTapeStatus@4 @687
+  GetTempFileNameA@16 @688
+  GetTempFileNameW@16 @689
+  GetTempPathA@8 @690
+  GetTempPathW@8 @691
+  GetThreadContext@8 @692
+  GetThreadErrorMode@0 @693
+  GetThreadGroupAffinity@8 @694
+  GetThreadId@4 @695
+  GetThreadIOPendingFlag@8 @696
+  GetThreadLocale@0 @697
+  GetThreadPreferredUILanguages@16 @698
+  GetThreadPriority@4 @699
+  GetThreadPriorityBoost@8 @700
+  GetThreadSelectorEntry@12 @701
+  GetThreadTimes@20 @702
+  GetTickCount@0 @703
+  GetTickCount64@0 @704
+  GetTimeFormatA@24 @705
+  GetTimeFormatEx@24 @706
+  GetTimeFormatW@24 @707
+  GetTimeZoneInformation@4 @708
+  GetTimeZoneInformationForYear@12 @709
+  GetThreadUILanguage@0 @710
+  GetUserDefaultLCID@0 @711
+  GetUserDefaultLangID@0 @712
+  GetUserDefaultLocaleName@8 @713
+  GetUserDefaultUILanguage@0 @714
+  GetUserGeoID@4 @715
+  GetVersion@0 @717
+  GetVersionExA@4 @718
+  GetVersionExW@4 @719
+  GetVolumeInformationA@32 @720
+  GetVolumeInformationByHandleW@32 @721
+  GetVolumeInformationW@32 @722
+  GetVolumeNameForVolumeMountPointA@12 @723
+  GetVolumeNameForVolumeMountPointW@12 @724
+  GetVolumePathNameA@12 @725
+  GetVolumePathNameW@12 @726
+  GetVolumePathNamesForVolumeNameA@16 @727
+  GetVolumePathNamesForVolumeNameW@16 @728
+  GetWindowsDirectoryA@8 @729
+  GetWindowsDirectoryW@8 @730
+  GetWriteWatch@24 @731
+  GlobalAddAtomA@4 @732
+  GlobalAddAtomW@4 @733
+  GlobalAlloc@8 @734
+  GlobalCompact@4 @735
+  GlobalDeleteAtom@4 @736
+  GlobalFindAtomA@4 @737
+  GlobalFindAtomW@4 @738
+  GlobalFix@4 @739
+  GlobalFlags@4 @740
+  GlobalFree@4 @741
+  GlobalGetAtomNameA@12 @742
+  GlobalGetAtomNameW@12 @743
+  GlobalHandle@4 @744
+  GlobalLock@4 @745
+  GlobalMemoryStatus@4 @746
+  GlobalMemoryStatusEx@4 @747
+  GlobalReAlloc@12 @748
+  GlobalSize@4 @749
+  GlobalUnWire@4 @750
+  GlobalUnfix@4 @751
+  GlobalUnlock@4 @752
+  GlobalWire@4 @753
+  Heap32ListFirst@8 @755
+  HeapAlloc@12=ntdll.RtlAllocateHeap @758
+  HeapCompact@8 @759
+  HeapCreate@12 @760
+  HeapDestroy@4 @762
+  HeapFree@12=ntdll.RtlFreeHeap @764
+  HeapLock@4 @765
+  HeapQueryInformation@20 @766
+  HeapReAlloc@16=ntdll.RtlReAllocateHeap @768
+  HeapSetInformation@16 @770
+  HeapSize@12=ntdll.RtlSizeHeap @771
+  HeapUnlock@4 @773
+  HeapValidate@12 @775
+  HeapWalk@8 @776
+  IdnToAscii@20 @777
+  IdnToNameprepUnicode@20 @778
+  IdnToUnicode@20 @779
+  InitAtomTable@4 @780
+  InitOnceBeginInitialize@16 @781
+  InitOnceComplete@12 @782
+  InitOnceExecuteOnce@16 @783
+  InitOnceInitialize@4=ntdll.RtlRunOnceInitialize @784
+  InitializeConditionVariable@4=ntdll.RtlInitializeConditionVariable @785
+  InitializeCriticalSection@4 @786
+  InitializeCriticalSectionAndSpinCount@8 @787
+  InitializeCriticalSectionEx@12 @788
+  InitializeProcThreadAttributeList@16 @789
+  InitializeSListHead@4=ntdll.RtlInitializeSListHead @790
+  InitializeSRWLock@4=ntdll.RtlInitializeSRWLock @791
+  InterlockedCompareExchange@12 @792
+  InterlockedCompareExchange64@20=ntdll.RtlInterlockedCompareExchange64 @793
+  InterlockedDecrement@4 @794
+  InterlockedExchange@8 @795
+  InterlockedExchangeAdd@8 @796
+  InterlockedFlushSList@4=ntdll.RtlInterlockedFlushSList @797
+  InterlockedIncrement@4 @798
+  InterlockedPopEntrySList@4=ntdll.RtlInterlockedPopEntrySList @799
+  InterlockedPushEntrySList@8=ntdll.RtlInterlockedPushEntrySList @800
+  InterlockedPushListSList@16=ntdll.RtlInterlockedPushListSList @801
+  InterlockedPushListSListEx@16=ntdll.RtlInterlockedPushListSListEx @802
+  InvalidateNLSCache@0 @804
+  IsBadCodePtr@4 @805
+  IsBadHugeReadPtr@8 @806
+  IsBadHugeWritePtr@8 @807
+  IsBadReadPtr@8 @808
+  IsBadStringPtrA@8 @809
+  IsBadStringPtrW@8 @810
+  IsBadWritePtr@8 @811
+  IsDBCSLeadByte@4 @812
+  IsDBCSLeadByteEx@8 @813
+  IsDebuggerPresent@0 @814
+  IsNormalizedString@12 @816
+  IsProcessInJob@12 @817
+  IsProcessorFeaturePresent@4 @818
+  IsSystemResumeAutomatic@0 @820
+  IsThreadAFiber@0 @821
+  IsThreadpoolTimerSet@4=ntdll.TpIsTimerSet @822
+  IsValidCodePage@4 @823
+  IsValidLanguageGroup@8 @824
+  IsValidLocale@8 @825
+  IsValidLocaleName@4 @826
+  IsWow64Process@8 @827
+  K32EmptyWorkingSet@4 @828
+  K32EnumDeviceDrivers@12 @829
+  K32EnumPageFilesA@8 @830
+  K32EnumPageFilesW@8 @831
+  K32EnumProcessModules@16 @832
+  K32EnumProcessModulesEx@20 @833
+  K32EnumProcesses@12 @834
+  K32GetDeviceDriverBaseNameA@12 @835
+  K32GetDeviceDriverBaseNameW@12 @836
+  K32GetDeviceDriverFileNameA@12 @837
+  K32GetDeviceDriverFileNameW@12 @838
+  K32GetMappedFileNameA@16 @839
+  K32GetMappedFileNameW@16 @840
+  K32GetModuleBaseNameA@16 @841
+  K32GetModuleBaseNameW@16 @842
+  K32GetModuleFileNameExA@16 @843
+  K32GetModuleFileNameExW@16 @844
+  K32GetModuleInformation@16 @845
+  K32GetPerformanceInfo@8 @846
+  K32GetProcessImageFileNameA@12 @847
+  K32GetProcessImageFileNameW@12 @848
+  K32GetProcessMemoryInfo@12 @849
+  K32GetWsChanges@12 @850
+  K32InitializeProcessForWsWatch@4 @851
+  K32QueryWorkingSet@12 @852
+  K32QueryWorkingSetEx@12 @853
+  K32Thk1632Epilog@0=krnl386.exe16.K32Thk1632Epilog @854 PRIVATE
+  K32Thk1632Prolog@0=krnl386.exe16.K32Thk1632Prolog @855 PRIVATE
+  LCIDToLocaleName@16 @856
+  LCMapStringA@24 @857
+  LCMapStringEx@36 @858
+  LCMapStringW@24 @859
+  LZClose@4 @860
+  LZCopy@8 @861
+  LZDone@0 @862
+  LZInit@4 @863
+  LZOpenFileA@12 @864
+  LZOpenFileW@12 @865
+  LZRead@12 @866
+  LZSeek@12 @867
+  LZStart@0 @868
+  LeaveCriticalSection@4=ntdll.RtlLeaveCriticalSection @869
+  LeaveCriticalSectionWhenCallbackReturns@8=ntdll.TpCallbackLeaveCriticalSectionOnCompletion @870
+  LoadLibraryA@4 @871
+  LoadLibraryExA@12 @872
+  LoadLibraryExW@12 @873
+  LoadLibraryW@4 @874
+  LoadModule@8 @875
+  LoadResource@8 @876
+  LocalAlloc@8 @877
+  LocalCompact@4 @878
+  LocalFileTimeToFileTime@8 @879
+  LocalFlags@4 @880
+  LocalFree@4 @881
+  LocalHandle@4 @882
+  LocalLock@4 @883
+  LocalReAlloc@12 @884
+  LocalShrink@8 @885
+  LocalSize@4 @886
+  LocalUnlock@4 @887
+  LocaleNameToLCID@8 @888
+  LockFile@20 @889
+  LockFileEx@24 @890
+  LockResource@4 @891
+  MakeCriticalSectionGlobal@4 @892
+  MapHInstLS@0=krnl386.exe16.MapHInstLS @893 PRIVATE
+  MapHInstLS_PN@0=krnl386.exe16.MapHInstLS_PN @894 PRIVATE
+  MapHInstSL@0=krnl386.exe16.MapHInstSL @895 PRIVATE
+  MapHInstSL_PN@0=krnl386.exe16.MapHInstSL_PN @896 PRIVATE
+  MapHModuleLS@4=krnl386.exe16.MapHModuleLS @897 PRIVATE
+  MapHModuleSL@4=krnl386.exe16.MapHModuleSL @898 PRIVATE
+  MapLS@4=krnl386.exe16.MapLS @899 PRIVATE
+  MapSL@4=krnl386.exe16.MapSL @900 PRIVATE
+  MapSLFix@4=krnl386.exe16.MapSLFix @901 PRIVATE
+  MapViewOfFile@20 @902
+  MapViewOfFileEx@24 @903
+  Module32First@8 @904
+  Module32FirstW@8 @905
+  Module32Next@8 @906
+  Module32NextW@8 @907
+  MoveFileA@8 @908
+  MoveFileExA@12 @909
+  MoveFileExW@12 @910
+  MoveFileW@8 @911
+  MoveFileWithProgressA@20 @912
+  MoveFileWithProgressW@20 @913
+  MulDiv@12 @914
+  MultiByteToWideChar@24 @915
+  NeedCurrentDirectoryForExePathA@4 @916
+  NeedCurrentDirectoryForExePathW@4 @917
+  NormalizeString@20 @918
+  OpenConsoleW@16 @920
+  OpenEventA@12 @922
+  OpenEventW@12 @923
+  OpenFile@12 @924
+  OpenFileById@24 @925
+  OpenFileMappingA@12 @926
+  OpenFileMappingW@12 @927
+  OpenJobObjectA@12 @928
+  OpenJobObjectW@12 @929
+  OpenMutexA@12 @930
+  OpenMutexW@12 @931
+  OpenProcess@12 @932
+  OpenProfileUserMapping@0 @933
+  OpenSemaphoreA@12 @934
+  OpenSemaphoreW@12 @935
+  OpenThread@12 @936
+  OpenVxDHandle@4 @937
+  OpenWaitableTimerA@12 @938
+  OpenWaitableTimerW@12 @939
+  OutputDebugStringA@4 @940
+  OutputDebugStringW@4 @941
+  PeekConsoleInputA@16 @942
+  PeekConsoleInputW@16 @943
+  PeekNamedPipe@24 @944
+  PostQueuedCompletionStatus@16 @945
+  PowerClearRequest@8 @946
+  PowerCreateRequest@4 @947
+  PowerSetRequest@8 @948
+  PrepareTape@12 @949
+  PrivateFreeLibrary@4=krnl386.exe16.PrivateFreeLibrary @952 PRIVATE
+  PrivateLoadLibrary@4=krnl386.exe16.PrivateLoadLibrary @953 PRIVATE
+  Process32First@8 @954
+  Process32FirstW@8 @955
+  Process32Next@8 @956
+  Process32NextW@8 @957
+  ProcessIdToSessionId@8 @958
+  PulseEvent@4 @959
+  PurgeComm@8 @960
+  QT_Thunk@0=krnl386.exe16.QT_Thunk @961 PRIVATE
+  QueryActCtxSettingsW@28 @962
+  QueryActCtxW@28 @963
+  QueryDepthSList@4=ntdll.RtlQueryDepthSList @964
+  QueryDosDeviceA@12 @965
+  QueryDosDeviceW@12 @966
+  QueryFullProcessImageNameA@16 @967
+  QueryFullProcessImageNameW@16 @968
+  QueryInformationJobObject@20 @969
+  QueryMemoryResourceNotification@8 @970
+  QueryPerformanceCounter@4 @973
+  QueryPerformanceFrequency@4 @974
+  QueryProcessCycleTime@8 @975
+  QueryThreadCycleTime@8 @976
+  QueryUnbiasedInterruptTime@4 @977
+  QueueUserAPC@12 @979
+  QueueUserWorkItem@12 @980
+  RaiseException@16 @981
+  ReadConsoleA@20 @982
+  ReadConsoleInputA@16 @983
+  ReadConsoleInputW@16 @986
+  ReadConsoleOutputA@20 @987
+  ReadConsoleOutputAttribute@20 @988
+  ReadConsoleOutputCharacterA@20 @989
+  ReadConsoleOutputCharacterW@20 @990
+  ReadConsoleOutputW@20 @991
+  ReadConsoleW@20 @992
+  ReadDirectoryChangesW@32 @993
+  ReadFile@20 @994
+  ReadFileEx@20 @995
+  ReadFileScatter@20 @996
+  ReadProcessMemory@20 @997
+  RegCloseKey@4=advapi32.RegCloseKey @998 PRIVATE
+  RegCreateKeyExA@36=advapi32.RegCreateKeyExA @999 PRIVATE
+  RegCreateKeyExW@36=advapi32.RegCreateKeyExW @1000 PRIVATE
+  RegDeleteKeyExA@16=advapi32.RegDeleteKeyExA @1001 PRIVATE
+  RegDeleteKeyExW@16=advapi32.RegDeleteKeyExW @1002 PRIVATE
+  RegDeleteTreeA@8=advapi32.RegDeleteTreeA @1003 PRIVATE
+  RegDeleteTreeW@8=advapi32.RegDeleteTreeW @1004 PRIVATE
+  RegDeleteValueA@8=advapi32.RegDeleteValueA @1005 PRIVATE
+  RegDeleteValueW@8=advapi32.RegDeleteValueW @1006 PRIVATE
+  RegEnumKeyExA@32=advapi32.RegEnumKeyExA @1007 PRIVATE
+  RegEnumKeyExW@32=advapi32.RegEnumKeyExW @1008 PRIVATE
+  RegEnumValueA@32=advapi32.RegEnumValueA @1009 PRIVATE
+  RegEnumValueW@32=advapi32.RegEnumValueW @1010 PRIVATE
+  RegFlushKey@4=advapi32.RegFlushKey @1011 PRIVATE
+  RegGetKeySecurity@16=advapi32.RegGetKeySecurity @1012 PRIVATE
+  RegGetValueA@28=advapi32.RegGetValueA @1013 PRIVATE
+  RegGetValueW@28=advapi32.RegGetValueW @1014 PRIVATE
+  RegLoadKeyA@12=advapi32.RegLoadKeyA @1015 PRIVATE
+  RegLoadKeyW@12=advapi32.RegLoadKeyW @1016 PRIVATE
+  RegLoadMUIStringA@28=advapi32.RegLoadMUIStringA @1017 PRIVATE
+  RegLoadMUIStringW@28=advapi32.RegLoadMUIStringW @1018 PRIVATE
+  RegNotifyChangeKeyValue@20=advapi32.RegNotifyChangeKeyValue @1019 PRIVATE
+  RegOpenCurrentUser@8=advapi32.RegOpenCurrentUser @1020 PRIVATE
+  RegOpenKeyExA@20=advapi32.RegOpenKeyExA @1021 PRIVATE
+  RegOpenKeyExW@20=advapi32.RegOpenKeyExW @1022 PRIVATE
+  RegOpenUserClassesRoot@16=advapi32.RegOpenUserClassesRoot @1023 PRIVATE
+  RegQueryInfoKeyA@48=advapi32.RegQueryInfoKeyA @1024 PRIVATE
+  RegQueryInfoKeyW@48=advapi32.RegQueryInfoKeyW @1025 PRIVATE
+  RegQueryValueExA@24=advapi32.RegQueryValueExA @1026 PRIVATE
+  RegQueryValueExW@24=advapi32.RegQueryValueExW @1027 PRIVATE
+  RegRestoreKeyA@12=advapi32.RegRestoreKeyA @1028 PRIVATE
+  RegRestoreKeyW@12=advapi32.RegRestoreKeyW @1029 PRIVATE
+  RegSetKeySecurity@12=advapi32.RegSetKeySecurity @1030 PRIVATE
+  RegSetValueExA@24=advapi32.RegSetValueExA @1031 PRIVATE
+  RegSetValueExW@24=advapi32.RegSetValueExW @1032 PRIVATE
+  RegUnLoadKeyA@8=advapi32.RegUnLoadKeyA @1033 PRIVATE
+  RegUnLoadKeyW@8=advapi32.RegUnLoadKeyW @1034 PRIVATE
+  RegisterApplicationRecoveryCallback@16 @1035
+  RegisterApplicationRestart@8 @1036
+  RegisterServiceProcess@8 @1040
+  RegisterWaitForSingleObject@24 @1043
+  RegisterWaitForSingleObjectEx@20 @1044
+  ReinitializeCriticalSection@4 @1047
+  ReleaseActCtx@4 @1048
+  ReleaseMutex@4 @1049
+  ReleaseMutexWhenCallbackReturns@8=ntdll.TpCallbackReleaseMutexOnCompletion @1050
+  ReleaseSemaphore@12 @1051
+  ReleaseSemaphoreWhenCallbackReturns@12=ntdll.TpCallbackReleaseSemaphoreOnCompletion @1052
+  ReleaseSRWLockExclusive@4=ntdll.RtlReleaseSRWLockExclusive @1053
+  ReleaseSRWLockShared@4=ntdll.RtlReleaseSRWLockShared @1054
+  RemoveDirectoryA@4 @1055
+  RemoveDirectoryW@4 @1056
+  RemoveVectoredContinueHandler@4=ntdll.RtlRemoveVectoredContinueHandler @1057
+  RemoveVectoredExceptionHandler@4=ntdll.RtlRemoveVectoredExceptionHandler @1058
+  ReOpenFile@16 @1059
+  ReplaceFile@24=ReplaceFileW@24 @1060
+  ReplaceFileA@24 @1061
+  ReplaceFileW@24 @1062
+  RemoveDllDirectory@4 @1063
+  RequestDeviceWakeup@4 @1064
+  RequestWakeupLatency@4 @1065
+  ResetEvent@4 @1066
+  ResetWriteWatch@8 @1067
+  ResolveDelayLoadedAPI@24=ntdll.LdrResolveDelayLoadedAPI @1068
+  ResolveLocaleName@12 @1069
+  RestoreLastError@4=ntdll.RtlRestoreLastWin32Error @1070
+  ResumeThread@4 @1071
+  RtlCaptureContext@4=ntdll.RtlCaptureContext @1072
+  RtlCaptureStackBackTrace@16=ntdll.RtlCaptureStackBackTrace @1073
+  RtlFillMemory@12=ntdll.RtlFillMemory @1074
+  RtlMoveMemory@12=ntdll.RtlMoveMemory @1075
+  RtlUnwind@16=ntdll.RtlUnwind @1076
+  RtlZeroMemory@8=ntdll.RtlZeroMemory @1077
+  SMapLS@0=krnl386.exe16.SMapLS @1078 PRIVATE
+  SMapLS_IP_EBP_12@0=krnl386.exe16.SMapLS_IP_EBP_12 @1079 PRIVATE
+  SMapLS_IP_EBP_16@0=krnl386.exe16.SMapLS_IP_EBP_16 @1080 PRIVATE
+  SMapLS_IP_EBP_20@0=krnl386.exe16.SMapLS_IP_EBP_20 @1081 PRIVATE
+  SMapLS_IP_EBP_24@0=krnl386.exe16.SMapLS_IP_EBP_24 @1082 PRIVATE
+  SMapLS_IP_EBP_28@0=krnl386.exe16.SMapLS_IP_EBP_28 @1083 PRIVATE
+  SMapLS_IP_EBP_32@0=krnl386.exe16.SMapLS_IP_EBP_32 @1084 PRIVATE
+  SMapLS_IP_EBP_36@0=krnl386.exe16.SMapLS_IP_EBP_36 @1085 PRIVATE
+  SMapLS_IP_EBP_40@0=krnl386.exe16.SMapLS_IP_EBP_40 @1086 PRIVATE
+  SMapLS_IP_EBP_8@0=krnl386.exe16.SMapLS_IP_EBP_8 @1087 PRIVATE
+  SUnMapLS@0=krnl386.exe16.SUnMapLS @1088 PRIVATE
+  SUnMapLS_IP_EBP_12@0=krnl386.exe16.SUnMapLS_IP_EBP_12 @1089 PRIVATE
+  SUnMapLS_IP_EBP_16@0=krnl386.exe16.SUnMapLS_IP_EBP_16 @1090 PRIVATE
+  SUnMapLS_IP_EBP_20@0=krnl386.exe16.SUnMapLS_IP_EBP_20 @1091 PRIVATE
+  SUnMapLS_IP_EBP_24@0=krnl386.exe16.SUnMapLS_IP_EBP_24 @1092 PRIVATE
+  SUnMapLS_IP_EBP_28@0=krnl386.exe16.SUnMapLS_IP_EBP_28 @1093 PRIVATE
+  SUnMapLS_IP_EBP_32@0=krnl386.exe16.SUnMapLS_IP_EBP_32 @1094 PRIVATE
+  SUnMapLS_IP_EBP_36@0=krnl386.exe16.SUnMapLS_IP_EBP_36 @1095 PRIVATE
+  SUnMapLS_IP_EBP_40@0=krnl386.exe16.SUnMapLS_IP_EBP_40 @1096 PRIVATE
+  SUnMapLS_IP_EBP_8@0=krnl386.exe16.SUnMapLS_IP_EBP_8 @1097 PRIVATE
+  ScrollConsoleScreenBufferA@20 @1098
+  ScrollConsoleScreenBufferW@20 @1099
+  SearchPathA@24 @1100
+  SearchPathW@24 @1101
+  SetCPGlobal@4 @1102
+  SetCalendarInfoA@16 @1103
+  SetCalendarInfoW@16 @1104
+  SetCommBreak@4 @1105
+  SetCommConfig@12 @1106
+  SetCommMask@8 @1107
+  SetCommState@8 @1108
+  SetCommTimeouts@8 @1109
+  SetComputerNameA@4 @1110
+  SetComputerNameExA@8 @1111
+  SetComputerNameExW@8 @1112
+  SetComputerNameW@4 @1113
+  SetConsoleActiveScreenBuffer@4 @1114
+  SetConsoleCP@4 @1115
+  SetConsoleCtrlHandler@8 @1117
+  SetConsoleCursorInfo@8 @1119
+  SetConsoleCursorPosition@8 @1121
+  SetConsoleDisplayMode@12 @1122
+  SetConsoleFont@8 @1123
+  SetConsoleIcon@4 @1125
+  SetConsoleInputExeNameA@4 @1126
+  SetConsoleInputExeNameW@4 @1127
+  SetConsoleKeyShortcuts@16 @1128
+  SetConsoleMode@8 @1132
+  SetConsoleOutputCP@4 @1137
+  SetConsoleScreenBufferInfoEx@8 @1139
+  SetConsoleScreenBufferSize@8 @1140
+  SetConsoleTextAttribute@8 @1141
+  SetConsoleTitleA@4 @1142
+  SetConsoleTitleW@4 @1143
+  SetConsoleWindowInfo@12 @1144
+  SetCriticalSectionSpinCount@8=ntdll.RtlSetCriticalSectionSpinCount @1145
+  SetCurrentConsoleFontEx@12 @1146
+  SetCurrentDirectoryA@4 @1147
+  SetCurrentDirectoryW@4 @1148
+  SetDefaultCommConfigA@12 @1150
+  SetDefaultCommConfigW@12 @1151
+  SetDefaultDllDirectories@4 @1152
+  SetDllDirectoryA@4 @1153
+  SetDllDirectoryW@4 @1154
+  SetEndOfFile@4 @1155
+  SetEnvironmentVariableA@8 @1156
+  SetEnvironmentVariableW@8 @1157
+  SetErrorMode@4 @1158
+  SetEvent@4 @1159
+  SetEventWhenCallbackReturns@8=ntdll.TpCallbackSetEventOnCompletion @1160
+  SetFileApisToANSI@0 @1161
+  SetFileApisToOEM@0 @1162
+  SetFileAttributesA@8 @1163
+  SetFileAttributesW@8 @1164
+  SetFileCompletionNotificationModes@8 @1165
+  SetFileInformationByHandle@16 @1166
+  SetFilePointer@16 @1167
+  SetFilePointerEx@20 @1168
+  SetFileTime@16 @1169
+  SetFileValidData@12 @1170
+  SetHandleContext@8 @1171
+  SetHandleCount@4 @1172
+  SetHandleInformation@12 @1173
+  SetInformationJobObject@16 @1174
+  SetLastError@4 @1176
+  SetLocalTime@4 @1177
+  SetLocaleInfoA@12 @1178
+  SetLocaleInfoW@12 @1179
+  SetMailslotInfo@8 @1180
+  SetNamedPipeHandleState@16 @1182
+  SetPriorityClass@8 @1183
+  SetProcessAffinityMask@8 @1184
+  SetProcessAffinityUpdateMode@8 @1185
+  SetProcessDEPPolicy@4 @1186
+  SetProcessMitigationPolicy@12 @1187
+  SetProcessPriorityBoost@8 @1188
+  SetProcessShutdownParameters@8 @1189
+  SetProcessWorkingSetSize@12 @1190
+  SetSearchPathMode@4 @1191
+  SetStdHandle@8 @1192
+  SetSystemFileCacheSize@12 @1193
+  SetSystemPowerState@8 @1194
+  SetSystemTime@4 @1195
+  SetSystemTimeAdjustment@8 @1196
+  SetTapeParameters@12 @1197
+  SetTapePosition@24 @1198
+  SetTermsrvAppInstallMode@4 @1199
+  SetThreadAffinityMask@8 @1200
+  SetThreadContext@8 @1201
+  SetThreadErrorMode@8 @1202
+  SetThreadExecutionState@4 @1203
+  SetThreadGroupAffinity@12 @1204
+  SetThreadIdealProcessor@8 @1205
+  SetThreadIdealProcessorEx@12 @1206
+  SetThreadLocale@4 @1207
+  SetThreadPreferredUILanguages@12 @1208
+  SetThreadPriority@8 @1209
+  SetThreadPriorityBoost@8 @1210
+  SetThreadStackGuarantee@4 @1211
+  SetThreadUILanguage@4 @1212
+  SetThreadpoolThreadMaximum@8=ntdll.TpSetPoolMaxThreads @1213
+  SetThreadpoolThreadMinimum@8=ntdll.TpSetPoolMinThreads @1214
+  SetThreadpoolTimer@16 @1215
+  SetThreadpoolWait@12 @1216
+  SetTimeZoneInformation@4 @1217
+  SetUnhandledExceptionFilter@4 @1219
+  SetUserGeoID@4 @1220
+  SetVolumeLabelA@8 @1222
+  SetVolumeLabelW@8 @1223
+  SetVolumeMountPointA@8 @1224
+  SetVolumeMountPointW@8 @1225
+  SetWaitableTimer@24 @1226
+  SetWaitableTimerEx@28 @1227
+  SetupComm@12 @1228
+  SignalObjectAndWait@16 @1230
+  SizeofResource@8 @1231
+  Sleep@4 @1232
+  SleepConditionVariableCS@12 @1233
+  SleepConditionVariableSRW@16 @1234
+  SleepEx@8 @1235
+  SubmitThreadpoolWork@4=ntdll.TpPostWork @1236
+  SuspendThread@4 @1237
+  SwitchToFiber@4 @1238
+  SwitchToThread@0 @1239
+  SystemTimeToFileTime@8 @1240
+  SystemTimeToTzSpecificLocalTime@12 @1241
+  TerminateJobObject@8 @1242
+  TerminateProcess@8 @1243
+  TerminateThread@8 @1244
+  TermsrvAppInstallMode@0 @1245
+  Thread32First@8 @1246
+  Thread32Next@8 @1247
+  ThunkConnect32@24=krnl386.exe16.ThunkConnect32 @1248 PRIVATE
+  TlsAlloc@0 @1249
+  TlsAllocInternal@0=TlsAlloc@0 @1250
+  TlsFree@4 @1251
+  TlsFreeInternal@4=TlsFree@4 @1252
+  TlsGetValue@4 @1253
+  TlsSetValue@8 @1254
+  Toolhelp32ReadProcessMemory@20 @1255
+  TransactNamedPipe@28 @1256
+  TransmitCommChar@8 @1257
+  TryAcquireSRWLockExclusive@4=ntdll.RtlTryAcquireSRWLockExclusive @1259
+  TryAcquireSRWLockShared@4=ntdll.RtlTryAcquireSRWLockShared @1260
+  TryEnterCriticalSection@4=ntdll.RtlTryEnterCriticalSection @1261
+  TrySubmitThreadpoolCallback@12 @1262
+  TzSpecificLocalTimeToSystemTime@12 @1263
+  UTRegister@28=krnl386.exe16.UTRegister @1264 PRIVATE
+  UTUnRegister@4=krnl386.exe16.UTUnRegister @1265 PRIVATE
+  UnMapLS@4=krnl386.exe16.UnMapLS @1266 PRIVATE
+  UnMapSLFixArray@8=krnl386.exe16.UnMapSLFixArray @1267 PRIVATE
+  UnhandledExceptionFilter@4 @1268
+  UninitializeCriticalSection@4 @1269
+  UnlockFile@20 @1270
+  UnlockFileEx@20 @1271
+  UnmapViewOfFile@4 @1272
+  UnregisterApplicationRestart@0 @1273
+  UnregisterWait@4 @1274
+  UnregisterWaitEx@8 @1275
+  UpdateProcThreadAttribute@28 @1276
+  UpdateResourceA@24 @1277
+  UpdateResourceW@24 @1278
+  VerLanguageNameA@12 @1283
+  VerLanguageNameW@12 @1284
+  VerSetConditionMask@16=ntdll.VerSetConditionMask @1285
+  VerifyConsoleIoHandle@4 @1286
+  VerifyVersionInfoA@16 @1287
+  VerifyVersionInfoW@16 @1288
+  VirtualAlloc@16 @1289
+  VirtualAllocEx@20 @1290
+  VirtualFree@12 @1292
+  VirtualFreeEx@16 @1293
+  VirtualLock@8 @1294
+  VirtualProtect@16 @1295
+  VirtualProtectEx@20 @1296
+  VirtualQuery@12 @1297
+  VirtualQueryEx@16 @1298
+  VirtualUnlock@8 @1299
+  WTSGetActiveConsoleSessionId@0 @1300
+  WaitCommEvent@12 @1301
+  WaitForDebugEvent@8 @1302
+  WaitForMultipleObjects@16 @1303
+  WaitForMultipleObjectsEx@20 @1304
+  WaitForSingleObject@8 @1305
+  WaitForSingleObjectEx@12 @1306
+  WaitForThreadpoolTimerCallbacks@8=ntdll.TpWaitForTimer @1307
+  WaitForThreadpoolWaitCallbacks@8=ntdll.TpWaitForWait @1308
+  WaitForThreadpoolWorkCallbacks@8=ntdll.TpWaitForWork @1309
+  WaitNamedPipeA@8 @1310
+  WaitNamedPipeW@8 @1311
+  WakeAllConditionVariable@4=ntdll.RtlWakeAllConditionVariable @1312
+  WakeConditionVariable@4=ntdll.RtlWakeConditionVariable @1313
+  WerRegisterFile@12 @1314
+  WerRegisterMemoryBlock@8 @1315
+  WerRegisterRuntimeExceptionModule@8 @1316
+  WerSetFlags@4 @1317
+  WerUnregisterMemoryBlock@4 @1318
+  WideCharToMultiByte@32 @1319
+  WinExec@8 @1320
+  Wow64EnableWow64FsRedirection@4 @1321
+  Wow64DisableWow64FsRedirection@4 @1322
+  Wow64GetThreadContext@8 @1323
+  Wow64RevertWow64FsRedirection@4 @1324
+  Wow64SetThreadContext@8 @1325
+  WriteConsoleA@20 @1326
+  WriteConsoleInputA@16 @1327
+  WriteConsoleInputW@16 @1330
+  WriteConsoleOutputA@20 @1331
+  WriteConsoleOutputAttribute@20 @1332
+  WriteConsoleOutputCharacterA@20 @1333
+  WriteConsoleOutputCharacterW@20 @1334
+  WriteConsoleOutputW@20 @1335
+  WriteConsoleW@20 @1336
+  WriteFile@20 @1337
+  WriteFileEx@20 @1338
+  WriteFileGather@20 @1339
+  WritePrivateProfileSectionA@12 @1340
+  WritePrivateProfileSectionW@12 @1341
+  WritePrivateProfileStringA@16 @1342
+  WritePrivateProfileStringW@16 @1343
+  WritePrivateProfileStructA@20 @1344
+  WritePrivateProfileStructW@20 @1345
+  WriteProcessMemory@20 @1346
+  WriteProfileSectionA@8 @1347
+  WriteProfileSectionW@8 @1348
+  WriteProfileStringA@12 @1349
+  WriteProfileStringW@12 @1350
+  WriteTapemark@16 @1351
+  ZombifyActCtx@4 @1352
+  _hread@12 @1355
+  _hwrite@12 @1356
+  _lclose@4 @1357
+  _lcreat@8 @1358
+  _llseek@12 @1359
+  _lopen@8 @1360
+  _lread@12 @1361
+  _lwrite@12 @1362
+  lstrcat@8=lstrcatA@8 @1364
+  lstrcatA@8 @1365
+  lstrcatW@8 @1366
+  lstrcmp@8=lstrcmpA@8 @1367
+  lstrcmpA@8 @1368
+  lstrcmpW@8 @1369
+  lstrcmpi@8=lstrcmpiA@8 @1370
+  lstrcmpiA@8 @1371
+  lstrcmpiW@8 @1372
+  lstrcpy@8=lstrcpyA@8 @1373
+  lstrcpyA@8 @1374
+  lstrcpyW@8 @1375
+  lstrcpyn@12=lstrcpynA@12 @1376
+  lstrcpynA@12 @1377
+  lstrcpynW@12 @1378
+  lstrlen@4=lstrlenA@4 @1379
+  lstrlenA@4 @1380
+  lstrlenW@4 @1381
+  __wine_dll_register_16 @1382 PRIVATE
+  __wine_dll_unregister_16 @1383 PRIVATE
+  wine_get_unix_file_name @1385
+  wine_get_dos_file_name @1386
+  __wine_kernel_init @1387
