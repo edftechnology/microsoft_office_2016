@@ -17,6 +17,9 @@
 [submodule "subs/submodules/txt_scripts"]
 	path = subs/submodules/txt_scripts
 	url = git@github.com:edftechnology/txt_scripts.git
+[submodule ".github/workflows"]
+	path = .github/workflows
+	url = git@github.com:edftechnology/workflows.git
 [submodule ".vscode"]
 	path = .vscode
 	url = git@github.com:edftechnology/.vscode.git
