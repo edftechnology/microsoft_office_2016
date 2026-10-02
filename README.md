@@ -437,7 +437,7 @@ ChatGPT.
 Acessado em: 23/11/2023 13:47.
 
 [5] ASK UBUNTU (STACK EXCHANGE).
-**How do I install MS Office 2016 on PlayOnLinux?**
+**How do i install ms office 2016 on playonlinux?**
 Disponível em: <https://askubuntu.com/questions/975104/how-do-i-install-ms-office-2016-on-playonlinux>.
 Acessado em: 02/10/2026.
 
