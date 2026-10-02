@@ -179,3 +179,8 @@ dmypy.json
 .pyre/
 
 .jupyter_ystore.db
+
+# Large Office installation media is kept locally, outside Git history.
+/docs/SW_DVD5_Office_Professional_Plus_2010w_SP1_W32_English_CORE_MLF_X17-76748.ISO
+/docs/SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.img
+/docs/SW_DVD5_Office_Professional_Plus_2013w_SP1_W32_English_MLF_X19-35821.iso
