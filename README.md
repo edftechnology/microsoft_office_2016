@@ -77,23 +77,18 @@ Para configurar/instalar/usar o `Wine` no `Linux Ubuntu`, você pode seguir os p
 
 Para configurar/instalar/usar o `PlayOnLinux (POL)` no `Linux Ubuntu`, consulte também o guia do repositório: <https://github.com/edftechnology/playonlinux>.
 
-1. Abrir o `Terminal Emulator` e instalar o `PlayOnLinux` pelo `apt`:
+1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
 
     ```bash
-    sudo apt update
-    sudo apt install playonlinux -y
+    Ctrl + Alt + T
     ```
 
-    O pacote instala as dependências Python usadas pela interface, incluindo `python3-wxgtk4.0` (wxPython) e `python3-natsort`.
-
-2. O instalador deste documento requer os runners `Wine x86` nas versões `3.4`, `3.14`, `4.15` e `5.8`. Na raiz deste repositório, copie-os da pasta `docs/PlayOnLinux wine` para o diretório do PlayOnLinux:
+2. O instalador deste documento requer o _runner_ `Wine x86` na versão `5.8`. Na raiz deste
+repositório, copie-os da pasta `docs/PlayOnLinux wine` para o diretório do `PlayOnLinux`:
 
     ```bash
-    mkdir -p "$HOME/.PlayOnLinux/wine/linux-x86"
-    cp -a "docs/PlayOnLinux wine/linux-x86/3.4" \
-          "docs/PlayOnLinux wine/linux-x86/3.14" \
-          "docs/PlayOnLinux wine/linux-x86/4.15" \
-          "docs/PlayOnLinux wine/linux-x86/5.8" \
+    mkdir -pv "$HOME/.PlayOnLinux/wine/linux-x86"
+    cp -a "docs/PlayOnLinux wine/linux-x86/5.8" \
           "$HOME/.PlayOnLinux/wine/linux-x86/"
     ```
 
@@ -103,28 +98,27 @@ Para configurar/instalar/usar o `PlayOnLinux (POL)` no `Linux Ubuntu`, consulte 
     ls -lah "$HOME/.PlayOnLinux/wine/linux-x86/"
     ```
 
-    A listagem deve conter `3.4/`, `3.14/`, `4.15/` e `5.8/`. Reinicie o `PlayOnLinux` depois de copiar os runners.
+    A listagem deve conter `5.8/`.
+    
+4. Reinicie o `PlayOnLinux` depois de copiar o _runner_.
 
 
 ## 4. Configurar o `PlayOnLinux (POL)` [5]
 
 ### 4.1 Passos iniciais
 
-**A considerar :** `Wine x86` versão `4.15` é mais estável que `3.4` (abaixo) ou `3.14` (postagem
-do `GlasierXplor` no `POL` Fórum). Ou seja, ele não trava aleatoriamente. A ressalva é que haverá
-alguns problemas com as imagens, mas deverá funcionar bem 97% das vezes. O `Wine 4.15` requer a 
-instalação da atualização `POL 4.3.4` dos repositórios oficiais do `PlayOnLinux (POL)`.
+**A considerar:** este procedimento usa o `Wine x86 5.8`. A referência [5] relata que, no guia original, o autor considerou o `Wine x86 4.15` mais estável do que `3.4` ou `3.14`, citando uma postagem de GlasierXplor no fórum do `PlayOnLinux`; a fonte também menciona o `PlayOnLinux 4.3.4` como requisito para o Wine 4.15. Essa comparação é histórica e não avalia o Wine 5.8.
 
-1. A versão `3.4` do `Wine x86` foi usada para esta instalação, então verifique se ele está
-instalado iniciando o `PlayOnLinux (POL)` e selecionando `Tools-> Manage Wine versions`. Janela
-Gerenciar versões do `Wine` com `x86` versão `3.4` instalada
+1. A versão `5.8` do `Wine x86` foi usada para esta instalação, então verifique se ele está
+instalado iniciando o `PlayOnLinux (POL)` e selecionando `Tools -> Manage Wine versions`. Janela
+Gerenciar versões do `Wine` com `x86` versão `5.8` instalada
 
 <div align="center">
     <img src="docs/figures/playonlinux_wine_versions_manager.png" alt="Minha Imagem" />
     <p>Fig. 7. PlayOnLinux wine versions manager.</p>
 </div>
 
-2. Se o `Wine x86` versão `3.4` não aparecer em `Installed Wine versions`, selecione-a na janela
+2. Se o `Wine x86` versão `5.8` não aparecer em `Installed Wine versions`, selecione-a na janela
 `Available Wine versions:` e clique no botão `>` meio da janela para instalá-lo. Depois de
 instalado, **feche** e saia para o menu principal do `PlayOnLinux (POL)`.
 
@@ -139,14 +133,14 @@ instalação do `Windows` de `32 bits`
     <p>Fig. 8. PlayOnLinux Wizard .</p>
 </div>
 
-5. Selecione `Wine` versão `3.4` e pressione `Next`.
+5. Selecione `Wine` versão `5.8` e pressione `Next`.
 
-6. Dê um nome ao _drive_ virtual (por exemplo `wine34office2016pp`) e pressione `Next` para iniciar a
+6. Dê um nome ao _drive_ virtual (por exemplo `wine58office2016pp`) e pressione `Next` para iniciar a
 criação. Selecione para instalar o `Mono` se o `POL` solicitar.
 
 7. Assim que a criação da unidade virtual for concluída, você deverá retornar à tela principal de
 configuração do `PlayOnLinux (POL)`. Certifique-se de que a unidade recém-criada (por exemplo
-`wine34office2016pp`) esteja selecionada na janela esquerda.
+`wine58office2016pp`) esteja selecionada na janela esquerda.
 
 ### 4.2 Instalar componentes
 
@@ -181,11 +175,11 @@ Ao invés de instalar os componentes pelo `PlayOnLinux (POL)`, você pode instal
 1. Você pode instalar tudo de uma vez manualmente:
 
     ```bash
-    WINEPREFIX=~/.PlayOnLinux/wineprefix/wine34office2016pp winetricks dotnet40 msxml6 riched20 vcrun2013 corefonts
+    WINEPREFIX=~/.PlayOnLinux/wineprefix/wine58office2016pp winetricks dotnet40 msxml6 riched20 vcrun2013 corefonts
     ```
 
     **ATENÇÃO**: Perceba que, se você instalar o ambiente com outra versão do `wine`, você terá que alterar o
-    nome de `wine34office2016pp` conforme o nome que você criou, por exemplo, para a versão do
+    nome de `wine58office2016pp` conforme o nome que você criou, por exemplo, para a versão do
     `wine 3.14` pode ser `wine314office2016pp`.
 
 ### 4.3 Passos finais
@@ -236,7 +230,6 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
     ```bash
     Ctrl + Alt + T
     ```
-
 
 2. Certifique-se de que seu sistema esteja limpo e atualizado.
 
@@ -298,35 +291,30 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
     sudo apt update
     ```
 
-    3.1. O instalador de 32 bits precisa da biblioteca gráfica `libGL.so.1` de 32 bits. No `Terminal Emulator`, habilite a arquitetura `i386` e instale o pacote:
+    3.1. O instalador de 32 bits precisa da biblioteca gráfica `libGL.so.1` de 32 bits bem como do
+    `winbind`. No `Terminal Emulator`, habilite a arquitetura `i386` e instale o pacote:
 
     ```bash
     sudo dpkg --add-architecture i386
     sudo apt update
     sudo apt install libgl1:i386 -y
-    ```
-
-    Para contexto sobre o uso de Wine de 32 bits em um sistema de 64 bits, consulte também a referência [5].
-
-4. Criar o ponto de montagem `~/office2016`, se ele ainda não existir:
-
-    ```bash
-    mkdir -pv ~/office2016
-    ```
-
-5. Montar o arquivo `.ISO` baixado. O comando abaixo monta a imagem dentro da pasta `~/office2016`:
-
-    ```bash
-    sudo mount -o loop ~/Downloads/SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.ISO ~/office2016
-    ```
-
-6. Para instalar o `winbind`, digitar o comando:
-
-    ```bash
     sudo apt install winbind -y
     ```
 
-7. Clicar em `Install a program`:
+
+4. Criar o ponto de montagem `~/office2016pp`, se ele ainda não existir:
+
+    ```bash
+    mkdir -pv ~/office2016pp
+    ```
+
+5. Montar o arquivo `.ISO` baixado. O comando abaixo monta a imagem dentro da pasta `~/office2016pp`:
+
+    ```bash
+    sudo mount -o loop ~/Downloads/SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.ISO ~/office2016pp
+    ```
+
+6. Clicar em `Install a program`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_main_window.png" alt="Minha Imagem" />
@@ -334,7 +322,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-8. Clicar em `Search`:
+7. Clicar em `Search`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_install_menu.png" alt="Minha Imagem" />
@@ -342,7 +330,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-9. Digitar `Microsoft Office 2016 (method B)`:
+8. Digitar `Microsoft Office 2016 (method B)`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_search_office_2016.png" alt="Minha Imagem" />
@@ -350,7 +338,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-10. Clicar em `Microsoft Office 2016 (method B)`:
+9. Clicar em `Microsoft Office 2016 (method B)`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_select_office_2016_method_b.png" alt="Minha Imagem" />
@@ -359,7 +347,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 
 
 
-11. Clicar em `Install`:
+10. Clicar em `Install`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_method_b_selected.png" alt="Minha Imagem" />
@@ -367,7 +355,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-12. Clicar em `Next`:
+11. Clicar em `Next`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_during_a_playonlinux_installation.png" alt="Minha Imagem" />
@@ -375,7 +363,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-13. Clicar em `Next`:
+12. Clicar em `Next`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_is_not_related_to_winehq.png" alt="Minha Imagem" />
@@ -383,7 +371,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-14. Clicar em `Use a setup file in my computer` e clicar em `Next`:
+13. Clicar em `Use a setup file in my computer` e clicar em `Next`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_please_choose_an_installation_method.png" alt="Minha Imagem" />
@@ -391,7 +379,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-15. Clicar em `Browse`:
+14. Clicar em `Browse`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_please_select_the_setup_file_to_run.png" alt="Minha Imagem" />
@@ -399,14 +387,14 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-16. Na janela de arquivos, abrir o ponto de montagem `~/office2016`, selecionar o arquivo `setup.exe` que está dentro dele e clicar em `Open`; em seguida, clicar em `Next`. Selecione o `setup.exe`, não o arquivo `.ISO` inteiro:
+15. Na janela de arquivos, abrir o ponto de montagem `~/office2016`, selecionar o arquivo `setup.exe` que está dentro dele e clicar em `Open`; em seguida, clicar em `Next`. Selecione o `setup.exe`, não o arquivo `.ISO` inteiro:
 
 <div align="center">
     <img src="docs/figures/playonlinux_select_setup_exe_from_mounted_iso.png" alt="Minha Imagem" />
     <p>Fig. 22. Arquivo setup.exe selecionado no ponto de montagem.</p>
 </div>
 
-17. Clicar em `Next`:
+16. Clicar em `Next`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_the_wizard_will_help_you_install_microsoft_office_2016_on_your_computer.png" alt="Minha Imagem" />
@@ -414,7 +402,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-18. Seguir as instruções do instalador do Office.
+17. Seguir as instruções do instalador do Office.
 
 <div align="center">
     <img src="docs/figures/office_2016_installer_window.png" alt="Minha Imagem" />
@@ -448,8 +436,8 @@ Disponível em: <https://chat.openai.com/c/498fa917-4067-4fc5-b69d-31c9514dc47e>
 ChatGPT.
 Acessado em: 23/11/2023 13:47.
 
-[5] STACK OVERFLOW.
-**64bit Debian and 32bit Wine.**
-Disponível em: <https://stackoverflow.com/questions/43845660/64bit-debian-and-32bit-wine>.
+[5] ASK UBUNTU (STACK EXCHANGE).
+**How do I install MS Office 2016 on PlayOnLinux?**
+Disponível em: <https://askubuntu.com/questions/975104/how-do-i-install-ms-office-2016-on-playonlinux>.
 Acessado em: 02/10/2026.
 
