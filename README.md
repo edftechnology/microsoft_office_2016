@@ -265,71 +265,32 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 3. **Adicionar os repos oficiais do `Linux Ubuntu`**: Execute:
 
     ```bash
-    sudo add-apt-repository main -y
+    sudo add-apt-repository main -y[]
     sudo add-apt-repository restricted -y
     sudo add-apt-repository universe -y
     sudo add-apt-repository multiverse -y
     sudo apt update
     ```
     
-4. Para instalar o `7zip`, digitar o comando:
+4. Criar a pasta com um nome que referencia o `Microsoft Office 2016` do arquivo `.iso`, se ela não existir:
 
     ```bash
-    sudo apt install p7zip-full -y
-    ```
-
-5. Cria a pasta com o mesmo nome do arquivo `.iso`, se ela não existir:
-
-    ```bash
-    mkdir -pv SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353
+    mkdir -pv ~/office2016pp
     ``` 
 
-6. Para extrair o arquivo `.iso`, digitar o comando:
+5. Para montar o arquivo `.iso`, digitar o comando:
 
     ```bash
-    7z x SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.iso -o SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353
+    sudo mount -o loop ~/Downloads/SW_DVD5_Office_Professional_Plus_2016_W32_English_MLF_X20-41353.ISO ~/office2016pp
     ```
 
-7. Para instalar o `winbind`, digitar o comando:
+6. Para instalar o `winbind`, digitar o comando:
 
     ```bash
     sudo apt install winbind -y
     ```
 
-8. Para instalar o `playonlinux`, digitar o comando:
-
-    8.1  **Instalar dependências necessárias**: Primeiro, instale as dependências necessárias para compilar o `wxPython`:
-
-    ```bash
-    sudo apt install build-essential libgtk-3-dev libjpeg-dev libtiff-dev libpng-dev libwxgtk3.0-gtk3-dev -y
-    ```
-
-    8.2 **Tentar instalar `wxPython` novamente**: Agora, tente instalar o `wxPython` novamente usando `pip`: 
-    
-    ```bash
-    python3 -m pip install wxPython
-    ```
-
-    8.3 **Instalar o `playonlinux`**:
-    
-    ```bash
-    sudo apt install playonlinux -y
-    ```
-
-    8.4 **Instalar o módulo `natsort`**: Use o pip para instalar o módulo `natsort`:
-    
-    ```bash
-    python3 -m pip install natsort
-    ```
-
-9. Para abrir o `playonlinux`, digitar o comando:
-
-    ```bash
-    playonlinux
-    ```
-
-
-10. Clicar em `Install a program`:
+7. Clicar em `Install a program`:
 
 <div align="center">
     <img src="docs/figures/fig7.png" alt="Minha Imagem" />
@@ -337,7 +298,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-11. Clicar em `Search`:
+8. Clicar em `Search`:
 
 <div align="center">
     <img src="docs/figures/fig8.png" alt="Minha Imagem" />
@@ -345,7 +306,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-12. Digitar `Microsoft Office 2016 (method B)`:
+9. Digitar `Microsoft Office 2016 (method B)`:
 
 <div align="center">
     <img src="docs/figures/fig9.png" alt="Minha Imagem" />
@@ -353,7 +314,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-13. Clicar em `Microsoft Office 2016 (method B)`:
+10. Clicar em `Microsoft Office 2016 (method B)`:
 
 <div align="center">
     <img src="docs/figures/fig10.png" alt="Minha Imagem" />
@@ -362,7 +323,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 
 
 
-14. Clicar em `Install`:
+11. Clicar em `Install`:
 
 <div align="center">
     <img src="docs/figures/fig11.png" alt="Minha Imagem" />
@@ -370,7 +331,7 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
 </div>
 
 
-15. Clicar em `Next`:
+12. Clicar em `Next`:
 
 <div align="center">
     <img src="docs/figures/playonlinux_during_a_playonlinux_installation.png" alt="Minha Imagem" />
@@ -401,6 +362,13 @@ Para configurar/instalar/usar o `Microsoft Office 2016` no `Linux Ubuntu`, siga 
     <p>Fig. 20. `PlayOnLinux - Please select the setup file to run`.</p>
 </div>
 
+
+19. Selecionar o `mount`, dentro dele, selecionar o arquivo `setup.exe` e apertar o `Open`, depois clicar em `Next`:
+
+<div align="center">
+    <img src="docs/figures/playonlinux_select_a_file.png" alt="Minha Imagem" />
+    <p>Fig. 21. `PlayOnLinux - Selecionar o arquivo e apertar o `Open`..</p>
+</div>
 
 19. Selecionar o arquivo e apertar o `Open`, depois clicar em `Next`:
 
